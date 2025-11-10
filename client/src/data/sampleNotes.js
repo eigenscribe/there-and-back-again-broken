@@ -153,7 +153,7 @@ Enjoy your personal mathematical knowledge garden! 📚✨`
     },
     citations: [],
     hasGraph: false,
-    aiWarning: false
+    aiWarning: true
   },
   {
     id: '202511100001',
