@@ -4,7 +4,7 @@ import NoteDisplay from './components/NoteDisplay';
 import { sampleNotes } from './data/sampleNotes';
 
 function App() {
-  const [currentNoteId, setCurrentNoteId] = useState(null);
+  const [currentNoteId, setCurrentNoteId] = useState(sampleNotes[0]?.id || null);
   
   const currentNote = sampleNotes.find(note => note.id === currentNoteId);
 

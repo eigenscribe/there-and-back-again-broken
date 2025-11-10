@@ -15,15 +15,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Flask-Server"
+args = "Vite Dev Server"
 
 [[workflows.workflow]]
-name = "Flask-Server"
+name = "Vite Dev Server"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd server && python app.py"
+args = "cd client && npm run dev"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
@@ -34,5 +34,5 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 37627
+localPort = 38609
 externalPort = 3000
