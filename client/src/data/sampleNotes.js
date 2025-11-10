@@ -3,6 +3,7 @@ export const sampleNotes = [
     id: '202511100001',
     title: 'Introduction to Topology',
     tags: ['topology', 'mathematics', 'foundations'],
+    group: 'prototypes',
     linkedNotes: ['202511100002', '202511100003'],
     content: {
       abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -33,6 +34,7 @@ export const sampleNotes = [
     id: '202511100002',
     title: 'Metric Spaces',
     tags: ['analysis', 'metric-spaces', 'topology'],
+    group: 'prototypes',
     linkedNotes: ['202511100001', '202511100004'],
     content: {
       abstract: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
@@ -65,6 +67,7 @@ export const sampleNotes = [
     id: '202511100003',
     title: 'Continuous Functions',
     tags: ['analysis', 'continuity', 'calculus'],
+    group: 'prototypes',
     linkedNotes: ['202511100001', '202511100002'],
     content: {
       abstract: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
@@ -92,6 +95,7 @@ export const sampleNotes = [
     id: '202511100004',
     title: 'Convergence of Sequences',
     tags: ['analysis', 'sequences', 'limits'],
+    group: 'prototypes',
     linkedNotes: ['202511100002', '202511100003'],
     content: {
       abstract: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.',

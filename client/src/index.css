@@ -35,6 +35,7 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
+  --radius-pill: 50px;
 
   /* Glass effect */
   --glass-bg: rgba(0, 0, 0, 0.6);
@@ -184,6 +185,58 @@ html, body {
   padding: var(--space-sm);
 }
 
+.note-group {
+  margin-bottom: var(--space-md);
+}
+
+.group-header {
+  padding: var(--space-sm) var(--space-md);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.group-header:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(20, 181, 255, 0.3);
+}
+
+.group-title {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.group-toggle {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  transition: transform 0.3s ease;
+}
+
+.group-toggle.expanded {
+  transform: rotate(90deg);
+}
+
+.group-notes {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.group-notes.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
 .note-item {
   padding: var(--space-md);
   margin-bottom: var(--space-sm);
@@ -228,9 +281,21 @@ html, body {
 }
 
 .tag {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  background: linear-gradient(145deg, rgba(0, 232, 255, 0.15), rgba(0, 112, 235, 0.15));
+  border: 1px solid rgba(20, 181, 255, 0.4);
+  border-radius: var(--radius-pill);
   color: var(--color-primary);
-  font-family: var(--font-mono);
+  font-family: var(--font-heading);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tag:hover {
+  background: linear-gradient(145deg, rgba(0, 232, 255, 0.25), rgba(0, 112, 235, 0.25));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(20, 181, 255, 0.3);
 }
 
 .sidebar-footer {
@@ -325,13 +390,21 @@ html, body {
 }
 
 .tag-badge {
-  font-family: var(--font-mono);
+  font-family: var(--font-heading);
   font-size: 0.75rem;
-  padding: var(--space-xs) var(--space-sm);
-  background: rgba(118, 82, 245, 0.15);
+  padding: 6px 14px;
+  background: linear-gradient(145deg, rgba(118, 82, 245, 0.15), rgba(94, 23, 235, 0.15));
   border: 1px solid var(--color-link);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-pill);
   color: var(--color-link);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tag-badge:hover {
+  background: linear-gradient(145deg, rgba(118, 82, 245, 0.25), rgba(94, 23, 235, 0.25));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(118, 82, 245, 0.3);
 }
 
 .note-title-main {
