@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import NoteDisplay from './components/NoteDisplay';
+import GraphView from './components/GraphView';
 import { sampleNotes } from './data/sampleNotes';
 
-function App() {
+function AppContent() {
   const [currentNoteId, setCurrentNoteId] = useState(sampleNotes[0]?.id || null);
+  const navigate = useNavigate();
   
   const currentNote = sampleNotes.find(note => note.id === currentNoteId);
 
   const handleNoteSelect = (noteId) => {
     setCurrentNoteId(noteId);
+    navigate('/');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -28,23 +32,37 @@ function App() {
               <p className="header-subtitle">A Zettelkasten Approach</p>
             </div>
           </div>
+          <nav className="header-nav">
+            <Link to="/" className="nav-link">Notes</Link>
+            <Link to="/graph" className="nav-link">Graph</Link>
+          </nav>
         </div>
       </header>
 
-      <div className="main-layout">
-        <Sidebar 
-          notes={sampleNotes} 
-          currentNoteId={currentNoteId}
-          onNoteSelect={handleNoteSelect}
-        />
-        <main className="main-content">
-          <NoteDisplay 
-            note={currentNote} 
-            allNotes={sampleNotes}
-            onNoteClick={handleNoteSelect}
+      <Routes>
+        <Route path="/" element={
+          <div className="main-layout">
+            <Sidebar 
+              notes={sampleNotes} 
+              currentNoteId={currentNoteId}
+              onNoteSelect={handleNoteSelect}
+            />
+            <main className="main-content">
+              <NoteDisplay 
+                note={currentNote} 
+                allNotes={sampleNotes}
+                onNoteClick={handleNoteSelect}
+              />
+            </main>
+          </div>
+        } />
+        <Route path="/graph" element={
+          <GraphView 
+            notes={sampleNotes}
+            onNoteSelect={handleNoteSelect}
           />
-        </main>
-      </div>
+        } />
+      </Routes>
 
       <footer className="footer">
         <div className="footer-content">
@@ -55,6 +73,14 @@ function App() {
         </div>
       </footer>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }
 
