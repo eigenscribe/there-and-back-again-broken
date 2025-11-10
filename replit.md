@@ -14,9 +14,10 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 ### Frontend Architecture
 - **React 19 with Vite**: Modern React application with Vite for fast development
 - **Zettelkasten Structure**: Networked note-taking with bidirectional links between mathematical concepts
+- **Diataxis Organization**: Notes organized into collapsible groups following the Diataxis framework (Prototypes, Tutorials, How-to Guides, Explanations, Reference)
 - **PreTeXt Integration**: Mathematical content in PreTeXt XML format rendered with MathJax
 - **Component-based Structure**: Modular components for note display, navigation, and graph visualization
-- **Styling Strategy**: TailwindCSS 4.x with custom academic design system for readable mathematical content
+- **Styling Strategy**: Custom design system with Aclonica font for headings/UI, Merriweather for body text
 - **Interactive Visualizations**: Chart.js for mathematical graphs and data visualization
 - **Citation Management**: BibTeX integration for academic citations
 
@@ -33,9 +34,12 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 
 ### Styling Architecture
 - **Design System**: Custom color palette with cyan-to-purple gradient scheme
+- **Typography System**: Aclonica font for all headings, sidebar, and UI elements; Merriweather serif for body paragraphs (optimal readability for mathematical content)
+- **Tag Styling**: Pill-style tags with 50px border radius, Aclonica font, gradient backgrounds, and hover effects
 - **Glassmorphic Design**: Custom CSS classes for glass effects with backdrop blur
-- **Responsive Design**: TailwindCSS responsive utilities for mobile-first approach
+- **Responsive Design**: Custom responsive utilities for mobile-first approach
 - **Custom Animations**: Gradient text animations and interactive hover effects
+- **Collapsible Groups**: Smooth expand/collapse transitions for note category organization
 
 ### Development Workflow
 - **Client Development**: Vite dev server on port 3000 with HMR
@@ -62,6 +66,29 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 - **Vite Plugins**: React plugin for JSX processing and fast refresh
 
 ### Asset Management
-- **Static Assets**: Custom favicon and images served from `/public/assets/`
+- **Custom Assets**: Dragon logo, triquetra favicon, wisp background with glowing orbs, and orb footer decoration
+- **Static Assets**: Served from `/client/public/assets/` during development and `/public/assets/` in production
 - **Build Assets**: Compiled CSS and JavaScript served from `/client/dist/`
-- **Font System**: System font stack with fallbacks for cross-platform compatibility
+- **Font System**: Aclonica for headings/UI, Merriweather for body text, Fira Code for code blocks
+
+## Recent Changes (Nov 10, 2025)
+
+### Tag System Enhancement
+- Implemented pill-style tags with 50px border radius matching reference design
+- Updated all tags to use Aclonica font for visual consistency
+- Added gradient backgrounds and hover effects to tags throughout the application
+- Tags now have smooth transitions and subtle shadow effects
+
+### Diataxis Note Grouping System
+- Implemented collapsible note groups in sidebar following Diataxis framework
+- Five category groups: Prototypes, Tutorials, How-to Guides, Explanations, Reference
+- Groups display note counts when populated (e.g., "PROTOTYPES (4)")
+- Empty groups show "No notes yet" placeholder to indicate available categories
+- All groups expand/collapse independently with smooth animations
+- Current sample notes categorized under "Prototypes" group
+
+### User Assets Integration
+- Integrated custom dragon logo in header
+- Set triquetra knot as browser favicon
+- Applied mystical wisp background with glowing cyan orbs
+- Added orb decoration to footer with soft glow effect
