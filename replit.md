@@ -51,6 +51,10 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 ### Frontend Dependencies
 - **React 19.1.1**: Core React library for UI components
 - **React DOM 19.1.1**: React rendering for web browsers
+- **React Router DOM**: Client-side routing for navigation between pages
+- **React Force Graph 2D**: Interactive force-directed graph visualization for knowledge networks
+- **Chart.js**: Data visualization library for mathematical graphs
+- **React-ChartJS-2**: React wrapper for Chart.js integration
 - **Vite 7.1.2**: Build tool and development server
 - **TailwindCSS 4.1.13**: Utility-first CSS framework with PostCSS integration
 - **Autoprefixer**: CSS vendor prefixing for browser compatibility
@@ -110,3 +114,16 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 - Set triquetra knot as browser favicon
 - Applied mystical wisp background with glowing cyan orbs
 - Added orb decoration to footer with soft glow effect
+
+### Knowledge Graph Visualization
+- Implemented interactive knowledge graph page to visualize note network connections
+- Physics-based force-directed graph shows all notes as nodes with bidirectional links as edges
+- Nodes color-coded by Diataxis category (purple for prototypes, with distinct colors for other categories)
+- Node sizes reflect connection count - more linked notes appear larger
+- Custom canvas rendering with Aclonica font labels and glowing effects matching site aesthetics
+- Click-to-navigate functionality - clicking any node navigates to that note in the main view
+- Header navigation with "Notes" and "Graph" links for seamless page switching
+- Legend showing category color mappings for easy interpretation
+- Glassmorphic container with backdrop blur maintains visual consistency with rest of app
+- Graph auto-zooms to fit all nodes on load for optimal initial view
+- Responsive design with mobile-optimized layouts
