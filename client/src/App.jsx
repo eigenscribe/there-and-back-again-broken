@@ -1,91 +1,57 @@
-// Personal Portfolio App - Clean and simple using your actual design system
-import React from 'react'
+import React, { useState } from 'react';
+import Sidebar from './components/Sidebar';
+import NoteDisplay from './components/NoteDisplay';
+import { sampleNotes } from './data/sampleNotes';
 
 function App() {
+  const [currentNoteId, setCurrentNoteId] = useState(null);
+  
+  const currentNote = sampleNotes.find(note => note.id === currentNoteId);
+
+  const handleNoteSelect = (noteId) => {
+    setCurrentNoteId(noteId);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <div>
-      {/* Header with logo - smaller as requested */}
+    <div className="app-container">
       <header className="header">
         <div className="header-content">
-          <img 
-            src="/assets/logo1_1757552304373.png" 
-            alt="Personal Logo" 
-            className="header-logo"
-          />
-          {/* Space for future navigation links you'll add manually */}
+          <div className="header-branding">
+            <img 
+              src="/assets/logo1_1757552304373.png" 
+              alt="Logo" 
+              className="header-logo"
+            />
+            <div className="header-text">
+              <h1 className="header-title">Math Journal</h1>
+              <p className="header-subtitle">A Zettelkasten Approach</p>
+            </div>
+          </div>
         </div>
       </header>
 
-      {/* Main content */}
-      <div className="container">
-        
-        {/* Profile Section */}
-        <section className="section">
-          <div className="section-content" style={{ textAlign: 'center' }}>
-            <h1 className="gradient-heading" style={{ fontSize: '3rem', marginBottom: '1rem' }}>
-              Your Name
-            </h1>
-            <h2 style={{ color: 'var(--color-primary)', fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-              Software Developer & Creator
-            </h2>
-            <p style={{ color: 'whitesmoke', fontSize: '1.2rem', lineHeight: '1.6', maxWidth: '600px', margin: '0 auto' }}>
-              Welcome to my digital space! I'm passionate about creating beautiful, 
-              functional applications and exploring the intersection of technology and creativity.
-            </p>
-          </div>
-        </section>
-
-        {/* Skills Section */}
-        <section className="section">
-          <div className="section-content">
-            <h3 className="gradient-heading" style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '2rem' }}>
-              Skills & Technologies
-            </h3>
-            
-            <div className="skills-grid">
-              {/* Tech Skills */}
-              {['React', 'Python', 'JavaScript', 'Flask', 'Node.js', 'CSS'].map((skill) => (
-                <div key={skill} className="skill-item">
-                  {skill}
-                </div>
-              ))}
-              
-              {/* STEM Skills */}
-              {['Math', 'Physics', 'Data Science', 'Analytics'].map((skill) => (
-                <div key={skill} className="skill-item stem">
-                  {skill}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section className="section">
-          <div className="section-content" style={{ textAlign: 'center' }}>
-            <h3 className="gradient-heading" style={{ fontSize: '2.5rem', marginBottom: '2rem' }}>
-              Let's Connect
-            </h3>
-            
-            <div className="contact-links">
-              <a href="mailto:your.email@example.com">
-                📧 Email
-              </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                🔗 GitHub
-              </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                💼 LinkedIn
-              </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-                🐦 Twitter
-              </a>
-            </div>
-          </div>
-        </section>
+      <div className="main-layout">
+        <Sidebar 
+          notes={sampleNotes} 
+          currentNoteId={currentNoteId}
+          onNoteSelect={handleNoteSelect}
+        />
+        <main className="main-content">
+          <NoteDisplay 
+            note={currentNote} 
+            onNoteClick={handleNoteSelect}
+          />
+        </main>
       </div>
+
+      <footer className="footer">
+        <p>
+          Built with PreTeXt principles, MathJax, and the Zettelkasten method for networked mathematical thinking.
+        </p>
+      </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
