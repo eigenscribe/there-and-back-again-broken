@@ -1,20 +1,24 @@
-# Personal Portfolio Website
+# Zettelkasten-Dataxis Math Journal
 
 ## Overview
 
-This is a personal portfolio website built with a React frontend and Flask backend architecture. The project uses modern web technologies including React 19, Vite for build tooling, TailwindCSS for styling, and Flask for serving the application. The design emphasizes glassmorphic UI elements with custom gradient effects and a responsive layout.
+This is a Zettelkasten-Dataxis hybrid website for journaling self-study progress in mathematics. The project combines networked note-taking (Zettelkasten method) with PreTeXt-formatted mathematical content. Built with React 19, Vite, TailwindCSS, and Flask backend, it features MathJax for mathematical rendering, interactive graphs for data visualization, and BibTeX integration for citations.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Content: No AI-generated content except layout and styling. Sample prototype notes include AI warnings.
 
 ## System Architecture
 
 ### Frontend Architecture
-- **React 19 with Vite**: Modern React application using the latest version with Vite as the build tool for fast development and optimized production builds
-- **Component-based Structure**: Organized in `/client/src/` with modular component architecture
-- **Styling Strategy**: TailwindCSS 4.x for utility-first styling with custom extensions for brand colors and glassmorphic effects
-- **Development Tools**: ESLint for code quality, hot module replacement for development experience
+- **React 19 with Vite**: Modern React application with Vite for fast development
+- **Zettelkasten Structure**: Networked note-taking with bidirectional links between mathematical concepts
+- **PreTeXt Integration**: Mathematical content in PreTeXt XML format rendered with MathJax
+- **Component-based Structure**: Modular components for note display, navigation, and graph visualization
+- **Styling Strategy**: TailwindCSS 4.x with custom academic design system for readable mathematical content
+- **Interactive Visualizations**: Chart.js for mathematical graphs and data visualization
+- **Citation Management**: BibTeX integration for academic citations
 
 ### Backend Architecture  
 - **Flask Server**: Lightweight Python web server handling both API endpoints and static file serving
