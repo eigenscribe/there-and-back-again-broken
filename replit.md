@@ -1,8 +1,8 @@
-# Zettelkasten-Dataxis Math Journal
+# Zettelkasten-Diataxis Math Journal (PreTeXt Edition)
 
 ## Overview
 
-This is a Zettelkasten-Dataxis hybrid website for journaling self-study progress in mathematics. The project combines networked note-taking (Zettelkasten method) with PreTeXt-formatted mathematical content. Built with React 19, Vite, TailwindCSS, and Flask backend, it features MathJax for mathematical rendering, interactive graphs for data visualization, and BibTeX integration for citations.
+This is a Zettelkasten-Diataxis hybrid mathematics journal built with PreTeXt. The project combines networked note-taking (Zettelkasten method) with PreTeXt's powerful mathematical typesetting and web publishing. Content is organized using the Diataxis framework (Prototypes, Tutorials, Explanations, Reference) and features MathJax for beautiful mathematical rendering, proper academic citations via BibTeX, and custom styling that preserves the original cyan-purple gradient design aesthetic.
 
 ## User Preferences
 
@@ -11,26 +11,21 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 
 ## System Architecture
 
-### Frontend Architecture
-- **React 19 with Vite**: Modern React application with Vite for fast development
-- **Zettelkasten Structure**: Networked note-taking with bidirectional links between mathematical concepts
-- **Diataxis Organization**: Notes organized into collapsible groups following the Diataxis framework (Prototypes, Tutorials, How-to Guides, Explanations, Reference)
-- **PreTeXt Integration**: Mathematical content in PreTeXt XML format rendered with MathJax
-- **Component-based Structure**: Modular components for note display, navigation, and graph visualization
-- **Styling Strategy**: Custom design system with Aclonica font for headings/UI, Merriweather for body text
-- **Interactive Visualizations**: Chart.js for mathematical graphs and data visualization
-- **Citation Management**: BibTeX integration for academic citations
+### PreTeXt Structure
+- **PreTeXt 2.30.2**: Professional mathematical authoring and publishing system
+- **XML Source Format**: Content authored in PreTeXt XML with semantic markup for mathematical structures
+- **Diataxis Organization**: Notes organized into chapters following the Diataxis framework (Prototypes, Tutorials, Explanations, Reference)
+- **MathJax Rendering**: Beautiful mathematical typesetting with MathJax integration
+- **Networked Notes**: Cross-references between mathematical concepts using PreTeXt's `<xref>` system
+- **Academic Citations**: Proper bibliography management with `<cite>` elements and backmatter references
+- **Custom Styling**: CSS injected via build script to preserve original design aesthetic
 
-### Backend Architecture  
-- **Flask Server**: Lightweight Python web server handling both API endpoints and static file serving
-- **Hybrid Routing**: Serves React build files while providing API endpoints under `/api/` prefix
-- **Static Asset Management**: Handles assets from both public directory and React build output
-- **CORS Configuration**: Enabled for seamless frontend-backend communication during development
-
-### Build and Deployment
-- **Vite Build Process**: Compiles React application to `/client/dist/` directory
-- **Flask Integration**: Backend serves the built React app and handles client-side routing fallbacks
-- **Asset Pipeline**: Serves static assets with fallback logic between public assets and build artifacts
+### Build System
+- **PreTeXt CLI 2.30.2**: Command-line tool for building HTML and PDF outputs
+- **Custom Build Script**: `build.sh` handles PreTeXt build and CSS injection
+- **Asset Management**: Images and custom assets stored in `/assets/` directory
+- **HTML Output**: Generated to `/output/web/` directory with responsive modern theme
+- **Development Server**: PreTeXt built-in server on port 5000 for live preview
 
 ### Styling Architecture
 - **Design System**: Custom color palette with cyan-to-purple gradient scheme
@@ -48,26 +43,15 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 
 ## External Dependencies
 
-### Frontend Dependencies
-- **React 19.1.1**: Core React library for UI components
-- **React DOM 19.1.1**: React rendering for web browsers
-- **React Router DOM**: Client-side routing for navigation between pages
-- **React Force Graph 2D**: Interactive force-directed graph visualization for knowledge networks
-- **Chart.js**: Data visualization library for mathematical graphs
-- **React-ChartJS-2**: React wrapper for Chart.js integration
-- **Vite 7.1.2**: Build tool and development server
-- **TailwindCSS 4.1.13**: Utility-first CSS framework with PostCSS integration
-- **Autoprefixer**: CSS vendor prefixing for browser compatibility
+### Core Dependencies
+- **PreTeXt CLI 2.30.2**: Mathematical authoring and publishing system
+- **Python 3.12**: Required for PreTeXt CLI
+- **MathJax**: Automatic rendering of mathematical notation (loaded via CDN)
+- **Runestone Services 7.9.18**: Interactive features and services for PreTeXt HTML output
 
-### Backend Dependencies
-- **Flask**: Python web framework for API and static file serving
-- **Flask-CORS**: Cross-origin resource sharing for frontend integration
-- **Werkzeug**: WSGI utility library for HTTP exception handling
-
-### Development Tools
-- **ESLint 9.33.0**: JavaScript/React code linting with custom rules
-- **PostCSS**: CSS processing pipeline for TailwindCSS integration
-- **Vite Plugins**: React plugin for JSX processing and fast refresh
+### Build Tools
+- **bash**: Shell scripting for custom build pipeline
+- **sed**: Text processing for CSS injection into HTML files
 
 ### Asset Management
 - **Custom Assets**: Dragon logo, triquetra favicon, wisp background with glowing orbs, and orb footer decoration
@@ -75,7 +59,20 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 - **Build Assets**: Compiled CSS and JavaScript served from `/client/dist/`
 - **Font System**: Aclonica for headings/UI, Merriweather for body text, Fira Code for code blocks
 
-## Recent Changes (Nov 10, 2025)
+## Recent Changes
+
+### PreTeXt Conversion (Nov 11, 2025)
+- **Complete Migration**: Converted entire project from React/Vite to PreTeXt XML format
+- **Content Preservation**: All mathematical notes (topology, metric spaces, continuous functions, sequences) migrated to PreTeXt sections
+- **Citation System**: Implemented proper `<cite>` elements linking to backmatter bibliography (luhmann1984, munkres2000, rudin1976, spivak2008, apostol1974)
+- **Custom Styling**: Preserved original cyan-purple gradient design using CSS injection via `build.sh` script
+- **Glassmorphic Effects**: Maintained dark theme with backdrop blur effects on masthead, sidebar, and content areas
+- **Typography Preservation**: Aclonica font for all headings (with gradient effects), Merriweather serif for body text, Fira Code for code blocks
+- **Build Workflow**: Created custom `build.sh` script that builds PreTeXt HTML and injects custom CSS automatically
+- **Development Server**: PreTeXt server running on port 5000 with live preview capability
+- **Project Structure**: Clean XML organization with source files in `/source/`, assets in `/assets/`, output in `/output/web/`
+
+### Original React Version (Nov 10, 2025)
 
 ### Tag System Enhancement
 - Implemented pill-style tags with 50px border radius matching reference design
@@ -130,25 +127,29 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 
 ## Repository Structure
 
-Clean, minimal structure for easy navigation:
+PreTeXt project structure:
 ```
-client/                    # Frontend React app (all source code here)
-├── public/assets/        # Static assets (logo, images, backgrounds)
-├── src/
-│   ├── components/       # React components
-│   ├── data/            # Note storage (sampleNotes.js - edit this!)
-│   ├── App.jsx
-│   └── index.css
-attached_assets/          # User uploads from Replit
-replit.md                # Project documentation
-USAGE_GUIDE.md           # Usage instructions
+source/                    # PreTeXt XML source files
+├── main.ptx              # Main document structure
+├── frontmatter.ptx       # Title page and abstract
+├── docinfo.ptx           # Document metadata and macros
+├── ch-prototypes.ptx     # Prototype mathematical notes
+├── ch-tutorials.ptx      # Tutorial notes (Local Setup Guide)
+├── ch-explanations.ptx   # Explanation notes (placeholder)
+├── ch-reference.ptx      # Reference notes (placeholder)
+└── backmatter.ptx        # Bibliography and index
+assets/                   # Static assets (logo, images, custom CSS)
+├── custom-theme.css      # Custom styling matching original design
+├── dragon.png           # Dragon logo
+└── triquetra.png        # Triquetra favicon
+output/web/               # Generated HTML output (not committed)
+publication/              # Publication settings
+project.ptx               # Project manifest
+build.sh                  # Custom build script (builds + injects CSS)
+xsl/                      # Custom XSL stylesheets
+client/                   # Original React version (preserved for reference)
+replit.md                 # Project documentation
 ```
-
-Removed files/folders (cleanup Nov 10, 2025):
-- `public/` - Duplicate of client/public/assets
-- `server/` - Unused Flask backend
-- Root `package.json` - Duplicate dependencies
-- Python config files - Not needed for frontend-only project
 
 ## Sample Notes
 

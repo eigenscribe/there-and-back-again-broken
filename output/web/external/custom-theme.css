@@ -1,0 +1,336 @@
+/* Import Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Merriweather:wght@300;400;700&family=Fira+Code&display=swap');
+
+:root {
+  /* Colors - Matching original design */
+  --color-bg: #0d1117;
+  --color-surface: #161b22;
+  --color-primary: #14b5ff;
+  --color-secondary: #f78166;
+  --color-text: whitesmoke;
+  --color-muted: #8b949e;
+  --color-link: #7652f5;
+  --color-link-hover: #5e17eb;
+  --color-math: #00f5db;
+  --color-warning: #ffa657;
+
+  /* Gradients */
+  --gradient-light-to-dark-blue: linear-gradient(to right bottom, #00e8ff, #14b5ff, #3a98ff, #0070eb);
+  --gradient-cyan-to-blue: linear-gradient(130deg, #00ffee, #0a95eb);
+  --gradient-blue-to-purple: linear-gradient(to right bottom, #00e8ff, #14b5ff, #5280ff, #7952f5);
+
+  /* Typography */
+  --font-heading: 'Aclonica', sans-serif;
+  --font-body: 'Merriweather', Georgia, serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+/* Global Background & Body Styling */
+body.pretext {
+  background-image: url('../assets/wisp-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: var(--font-body) !important;
+  color: var(--color-text) !important;
+  line-height: 1.7;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00ffee, #14b5ff);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00ffff, #00e8ff);
+}
+
+/* Header & Masthead */
+.ptx-masthead {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.ptx-masthead .title-container h1 {
+  font-family: var(--font-heading) !important;
+  font-size: 1.8rem !important;
+  background: var(--gradient-cyan-to-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ptx-masthead .logo-link img {
+  height: 45px;
+}
+
+/* Sidebar & TOC */
+.ptx-sidebar {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.ptx-sidebar .ptx-toc {
+  font-family: var(--font-heading);
+}
+
+.ptx-toc ul.structural li {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+
+.ptx-toc ul.structural li:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--color-primary);
+  transform: translateX(4px);
+}
+
+.ptx-toc ul.structural li.active {
+  background: rgba(20, 181, 255, 0.15);
+  border-color: var(--color-primary);
+}
+
+/* Main Content Area */
+.ptx-page > .ptx-main {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* Headings */
+.ptx-content h1, .ptx-content h2, .ptx-content h3, .ptx-content h4, .ptx-content h5, .ptx-content h6 {
+  font-family: var(--font-heading) !important;
+}
+
+.ptx-content h1.heading {
+  font-size: 2.5rem !important;
+  background: var(--gradient-blue-to-purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.ptx-content h2.heading {
+  font-size: 1.65rem !important;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(20, 181, 255, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.ptx-content section.introduction {
+  background: rgba(255, 255, 255, 0.10);
+  border-left: 3px solid var(--color-primary);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.ptx-content section.introduction p {
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+/* Paragraphs */
+.ptx-content p {
+  font-size: 1.05rem !important;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.2px;
+}
+
+/* Links */
+.ptx-content a {
+  color: var(--color-link) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ptx-content a:hover {
+  color: var(--color-link-hover) !important;
+  text-decoration: underline;
+}
+
+/* Math Content */
+.ptx-content .displaymath {
+  background: rgba(0, 245, 219, 0.05) !important;
+  border: 1px solid rgba(0, 245, 219, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  overflow-x: auto;
+}
+
+.ptx-content mjx-container {
+  color: var(--color-math) !important;
+}
+
+/* Definition, Theorem, Example blocks */
+.ptx-content .definition-like,
+.ptx-content .theorem-like,
+.ptx-content .example-like,
+.ptx-content .remark-like {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.ptx-content .definition-like .heading,
+.ptx-content .theorem-like .heading,
+.ptx-content .example-like .heading {
+  font-family: var(--font-heading) !important;
+  color: var(--color-primary) !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 1rem;
+}
+
+/* Alert boxes */
+.ptx-content .assemblage-like {
+  background: rgba(255, 166, 87, 0.1);
+  border: 1px solid var(--color-warning);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: var(--color-warning);
+}
+
+/* Code blocks */
+.ptx-content code.code-inline,
+.ptx-content pre {
+  font-family: var(--font-mono) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: var(--color-math) !important;
+  border: 1px solid rgba(0, 245, 219, 0.3);
+  border-radius: 4px;
+}
+
+.ptx-content code.code-inline {
+  padding: 2px 6px;
+  font-size: 0.9em;
+}
+
+.ptx-content pre {
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+/* Lists */
+.ptx-content ol, .ptx-content ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ptx-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+/* Tags/Badges styling for index terms */
+.ptx-content .idx {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  padding: 4px 10px;
+  background: linear-gradient(145deg, rgba(0, 232, 255, 0.2), rgba(0, 112, 235, 0.2));
+  border: 1px solid rgba(20, 181, 255, 0.5);
+  border-radius: 50px;
+  color: #5ddbff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* Footer */
+.ptx-content-footer {
+  background: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+/* Bibliography */
+.ptx-content .biblio {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--color-primary);
+}
+
+.ptx-content .biblio .bibitem {
+  color: var(--color-text);
+}
+
+/* Cross-references */
+.ptx-content .xref {
+  color: var(--color-link) !important;
+  font-family: var(--font-heading);
+  font-size: 0.9em;
+  padding: 2px 8px;
+  background: rgba(118, 82, 245, 0.15);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.ptx-content .xref:hover {
+  background: rgba(118, 82, 245, 0.25);
+  color: var(--color-link-hover) !important;
+}
+
+/* Term highlighting */
+.ptx-content .terminology {
+  color: var(--color-primary) !important;
+  font-weight: 500;
+  font-family: var(--font-heading);
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .ptx-page > .ptx-main {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .ptx-content h1.heading {
+    font-size: 2rem !important;
+  }
+  
+  .ptx-content h2.heading {
+    font-size: 1.4rem !important;
+  }
+}

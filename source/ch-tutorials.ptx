@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-tutorials" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Tutorials</title>
+  <introduction>
+    <p>
+      Step-by-step guides for learning mathematical concepts and setting up your environment.
+    </p>
+  </introduction>
+
+  <section xml:id="sec-local-setup">
+    <title>Local Setup Guide</title>
+    <idx>setup</idx>
+    <idx>development</idx>
+    
+    <introduction>
+      <p>
+        <term>Note ID:</term> 202511100005 | 
+        <term>Tags:</term> tutorial, setup, development
+      </p>
+      <p>
+        Learn how to work with PreTeXt documents and build your mathematical knowledge base.
+      </p>
+    </introduction>
+
+    <subsection xml:id="subsec-prerequisites">
+      <title>Prerequisites</title>
+      <p>
+        Before you begin, make sure you have these installed on your computer:
+      </p>
+      <ul>
+        <li>
+          <p>
+            <term>Python</term> (version 3.10 or higher) <mdash/> Download from 
+            <url href="https://python.org">python.org</url>. 
+            Check if installed by typing <c>python --version</c> in your terminal.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>PreTeXt CLI</term> <mdash/> Install with <c>pip install pretext</c>
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Git</term> (recommended for version control) <mdash/> Download from 
+            <url href="https://git-scm.com">git-scm.com</url>. 
+            Check with <c>git --version</c>.
+          </p>
+        </li>
+      </ul>
+    </subsection>
+
+    <subsection xml:id="subsec-building-project">
+      <title>Building Your Project</title>
+      <p>
+        To build the HTML version of your math journal:
+      </p>
+      <pre>
+        pretext build web
+        pretext view
+      </pre>
+      <p>
+        This will build your project and start a local server. Open your browser to view the result.
+      </p>
+    </subsection>
+
+    <subsection xml:id="subsec-making-changes">
+      <title>Making Changes</title>
+      <p>
+        All your content is stored in <c>source/*.ptx</c> files. To add or edit notes:
+      </p>
+      <ol>
+        <li>
+          <p>Open the relevant chapter file in <c>source/</c></p>
+        </li>
+        <li>
+          <p>Add new sections following the PreTeXt XML format</p>
+        </li>
+        <li>
+          <p>Rebuild with <c>pretext build web</c></p>
+        </li>
+        <li>
+          <p>Refresh your browser to see the changes</p>
+        </li>
+      </ol>
+    </subsection>
+
+    <subsection xml:id="subsec-customization">
+      <title>Customization</title>
+      <p>
+        <term>Change Styling:</term> Edit <c>style/custom.css</c> to modify colors, fonts, and layout.
+      </p>
+      <p>
+        <term>Modify Publication Settings:</term> Edit <c>publication/publication.ptx</c> to configure output options.
+      </p>
+    </subsection>
+  </section>
+</chapter>
