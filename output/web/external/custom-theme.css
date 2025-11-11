@@ -27,7 +27,7 @@
 
 /* Global Background & Body Styling */
 body.pretext {
-  background-image: url('../assets/wisp-bg.jpg');
+  background-image: url('wisp.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +73,23 @@ body.pretext {
 }
 
 .ptx-masthead .logo-link img {
-  height: 45px;
+  height: 50px;
+  margin-right: 1rem;
+  filter: drop-shadow(0 0 8px rgba(0, 232, 255, 0.4));
+}
+
+/* Add logo before title */
+.ptx-masthead .title-container::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 8px rgba(0, 232, 255, 0.4));
 }
 
 /* Sidebar & TOC */
@@ -135,6 +151,17 @@ body.pretext {
   margin-bottom: 1.5rem;
 }
 
+/* Section numbers (1.1, 1.2, etc.) */
+.ptx-content h2.heading .codenumber,
+.ptx-content h3.heading .codenumber,
+.ptx-content h1.heading .codenumber {
+  background: var(--gradient-cyan-to-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-heading) !important;
+}
+
 .ptx-content h2.heading {
   font-size: 1.65rem !important;
   color: var(--color-primary);
@@ -166,15 +193,15 @@ body.pretext {
   letter-spacing: 0.2px;
 }
 
-/* Links */
+/* Links - Cyan/Blue theme instead of purple */
 .ptx-content a {
-  color: var(--color-link) !important;
+  color: #14b5ff !important;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .ptx-content a:hover {
-  color: var(--color-link-hover) !important;
+  color: #00e8ff !important;
   text-decoration: underline;
 }
 
@@ -298,18 +325,18 @@ body.pretext {
 
 /* Cross-references */
 .ptx-content .xref {
-  color: var(--color-link) !important;
+  color: #14b5ff !important;
   font-family: var(--font-heading);
   font-size: 0.9em;
   padding: 2px 8px;
-  background: rgba(118, 82, 245, 0.15);
+  background: rgba(20, 181, 255, 0.15);
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .ptx-content .xref:hover {
-  background: rgba(118, 82, 245, 0.25);
-  color: var(--color-link-hover) !important;
+  background: rgba(20, 181, 255, 0.25);
+  color: #00e8ff !important;
 }
 
 /* Term highlighting */
