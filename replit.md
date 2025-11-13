@@ -66,6 +66,11 @@ Content: No AI-generated content except layout and styling. Sample prototype not
 - **Cleaned Temporary Files**: Removed development logs, attached assets, and empty directories
 - **Updated Documentation**: Streamlined replit.md to reflect current PreTeXt-only architecture
 
+### CSS Overrides for Footer and TOC (Nov 13, 2025)
+- **Footer Centering Fix**: Added CSS to override PreTeXt's float rules on footer images and paragraphs, ensuring flexbox layout centers logo and copyright text side-by-side
+- **TOC Styling Cleanup**: Removed all default PreTeXt list markers, text transforms, font variants, and letter spacing from table of contents
+- **Custom TOC Spacing**: Added explicit padding and margins to TOC items for clean, modern appearance without bullets or uppercase forcing
+
 ### PreTeXt Conversion (Nov 13, 2025)
 - **Complete Migration**: Converted entire project from React/Vite to PreTeXt XML format
 - **Content Preservation**: All mathematical notes (topology, metric spaces, continuous functions, sequences) migrated to PreTeXt sections

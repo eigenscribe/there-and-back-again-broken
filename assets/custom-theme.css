@@ -155,6 +155,27 @@ body.pretext {
   padding: 1rem !important;
 }
 
+/* Remove all default TOC list styling */
+.ptx-toc ul,
+.ptx-toc ul.structural,
+.ptx-toc ul li {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Reset text transforms from PreTeXt defaults */
+.ptx-toc,
+.ptx-toc *,
+.ptx-toc .toc-title-box,
+.ptx-toc .codenumber,
+.ptx-toc .title {
+  text-transform: none !important;
+  font-variant: normal !important;
+  letter-spacing: normal !important;
+}
+
 /* TOC Chapter headers (Prototypes, Tutorials, etc.) */
 .ptx-toc ul.structural > li > .codenumber,
 .ptx-toc ul.structural > li > .title {
@@ -169,13 +190,15 @@ body.pretext {
 .ptx-toc a {
   color: var(--color-text) !important;
   transition: all 0.2s ease;
+  text-decoration: none !important;
 }
 
 .ptx-toc ul.structural li {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid transparent;
   border-radius: 8px;
-  margin-bottom: 6px;
+  margin-bottom: 6px !important;
+  padding: 0.5rem 0.75rem !important;
   transition: all 0.3s ease;
 }
 
@@ -508,7 +531,7 @@ body.pretext {
   display: none !important;
 }
 
-/* Page footer at the very bottom */
+/* Page footer at the very bottom - custom branding injected via build.sh */
 .ptx-page-footer,
 #ptx-page-footer {
   background: rgba(0, 0, 0, 0.7) !important;
@@ -521,60 +544,34 @@ body.pretext {
   margin-top: auto;
 }
 
-/* Hide ALL default footer content including PreTeXt/Runestone/MathJax logos */
-.ptx-page-footer *,
-#ptx-page-footer *,
-.ptx-page-footer a,
-#ptx-page-footer a,
+/* Hide default PreTeXt/Runestone/MathJax logos (but not custom content) */
 .ptx-page-footer .pretext-link,
-#ptx-page-footer .pretext-link,
 .ptx-page-footer .runestone-link,
-#ptx-page-footer .runestone-link,
 .ptx-page-footer .mathjax-link,
-#ptx-page-footer .mathjax-link,
-.ptx-page-footer img,
-#ptx-page-footer img,
-.ptx-page-footer svg,
-#ptx-page-footer svg,
-.ptx-page-footer .logo,
-#ptx-page-footer .logo {
+#ptx-page-footer .pretext-link,
+#ptx-page-footer .runestone-link,
+#ptx-page-footer .mathjax-link {
   display: none !important;
   visibility: hidden !important;
-  opacity: 0 !important;
-  width: 0 !important;
-  height: 0 !important;
 }
 
-/* Add custom logo and copyright to page footer */
-.ptx-page-footer::before,
-#ptx-page-footer::before {
-  content: '' !important;
-  display: block !important;
-  width: 35px !important;
-  height: 35px !important;
-  background-image: url('logo.png') !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  filter: drop-shadow(0 0 8px rgba(0, 232, 255, 0.5)) !important;
-  margin: 0 auto 0.75rem auto !important;
-  visibility: visible !important;
-  opacity: 1 !important;
+/* Force flexbox layout for custom footer content (overrides PreTeXt float rules) */
+#ptx-page-footer > div,
+.ptx-page-footer > div {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
 }
 
-.ptx-page-footer::after,
-#ptx-page-footer::after {
-  content: 'eigenscribe © 2025' !important;
-  display: block !important;
-  font-family: var(--font-heading) !important;
-  background: var(--gradient-cyan-to-blue) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  font-size: 1rem !important;
+#ptx-page-footer img,
+#ptx-page-footer p,
+.ptx-page-footer img,
+.ptx-page-footer p {
+  float: none !important;
+  display: inline-block !important;
+  margin: 0 !important;
   text-align: center !important;
-  visibility: visible !important;
-  opacity: 1 !important;
 }
 
 /* Bibliography */
