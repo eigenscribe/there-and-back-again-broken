@@ -546,6 +546,41 @@ nav.ptx-toc .toc-item.active:not(:has(.toc-item)) {
 .ptx-content pre .constant,
 .ptx-content pre .cn { color: #ebcb8b !important; } /* Yellow - constants */
 
+/* Code block copy button styling */
+.ptx-content pre.clipboardable {
+  position: relative !important;
+}
+
+.code-copy {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  background: linear-gradient(145deg, rgba(20, 181, 255, 0.3), rgba(121, 82, 245, 0.4)) !important;
+  border: 1px solid rgba(20, 181, 255, 0.5) !important;
+  border-radius: 6px !important;
+  padding: 6px 8px !important;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.code-copy:hover {
+  background: linear-gradient(145deg, rgba(20, 181, 255, 0.5), rgba(121, 82, 245, 0.6)) !important;
+  border-color: rgba(20, 181, 255, 0.8) !important;
+  box-shadow: 0 0 12px rgba(20, 181, 255, 0.4) !important;
+  transform: scale(1.05);
+}
+
+.code-copy .copyicon {
+  color: #14b5ff !important;
+  font-size: 16px !important;
+}
+
+.code-copy:hover .copyicon {
+  color: #fff !important;
+}
+
 /* Lists */
 .ptx-content ol, .ptx-content ul {
   margin-left: 1.5rem;
