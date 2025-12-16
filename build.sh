@@ -12,6 +12,13 @@ cp assets/wisp.jpg output/web/external/
 cp assets/logo.png output/web/external/
 cp assets/favicon.png output/web/
 
+# Copy graph module files
+echo "Copying graph module files..."
+mkdir -p output/web/graph
+cp graph-module/graph.js output/web/graph/
+cp graph-module/graph.css output/web/graph/
+cp graph-module/notes-graph.json output/web/graph/
+
 # Also add override to ALL CSS files including runestone
 for rcss in output/web/_static/prefix-*.css output/web/_static/pretext/css/*.css; do
   if [ -f "$rcss" ]; then
