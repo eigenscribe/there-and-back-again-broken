@@ -995,9 +995,9 @@ dialog#ptx-search-modal button[type="button"]:hover,
 #searchresultsplaceholder {
   display: none;
   position: fixed !important;
-  top: 50% !important;
+  top: 140px !important;
   left: 50% !important;
-  transform: translate(-50%, -50%) !important;
+  transform: translateX(-50%) !important;
   z-index: 10000 !important;
   background: rgba(13, 17, 23, 0.98) !important;
   border: 1px solid rgba(20, 181, 255, 0.2) !important;
@@ -1007,7 +1007,7 @@ dialog#ptx-search-modal button[type="button"]:hover,
   width: calc(100vw - 32px) !important;
   max-width: 480px !important;
   min-width: 280px !important;
-  max-height: 80vh !important;
+  max-height: calc(100vh - 180px) !important;
   overflow: hidden !important;
   flex-direction: column !important;
   box-sizing: border-box !important;
