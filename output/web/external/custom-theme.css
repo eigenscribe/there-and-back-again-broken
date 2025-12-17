@@ -483,32 +483,32 @@ nav.ptx-toc .toc-item.active:not(:has(.toc-item)) {
 
 .ptx-content h1.heading {
   font-size: 2.5rem !important;
-  background: var(--gradient-blue-to-purple);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(130deg, #60a5fa, #a78bfa, #c084fc) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
   display: inline-block;
   margin-bottom: 1.5rem;
 }
 
-/* Section numbers and h2 headings - full gradient */
+/* Section numbers and h2 headings - purple gradient matching sidebar */
 .ptx-content h2.heading {
   font-size: 1.65rem !important;
-  background: var(--gradient-cyan-to-blue);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(130deg, #60a5fa, #a78bfa, #c084fc) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid rgba(20, 181, 255, 0.3);
+  border-bottom: 2px solid rgba(167, 139, 250, 0.3);
   letter-spacing: 0.5px;
 }
 
 .ptx-content h3.heading {
-  background: var(--gradient-cyan-to-blue);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(130deg, #60a5fa, #a78bfa, #c084fc) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
 
 .ptx-content section.introduction {
@@ -717,22 +717,30 @@ nav.ptx-toc .toc-item.active:not(:has(.toc-item)) {
 }
 
 .ptx-navbar .button {
-  background: linear-gradient(135deg, rgba(20, 181, 255, 0.35), rgba(121, 82, 245, 0.25)) !important;
-  border: 1px solid rgba(20, 181, 255, 0.5) !important;
-  color: var(--color-text) !important;
-  padding: 0.5rem 1rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  background: linear-gradient(135deg, rgba(20, 181, 255, 0.25), rgba(59, 130, 246, 0.3)) !important;
+  border: 1px solid rgba(20, 181, 255, 0.4) !important;
+  color: #a5e4ff !important;
+  padding: 8px 14px !important;
   border-radius: 8px !important;
   font-family: var(--font-heading) !important;
-  font-size: 0.9rem !important;
-  transition: all 0.3s ease !important;
+  font-size: 13px !important;
+  cursor: pointer !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  transition: all 0.2s ease !important;
   text-transform: none !important;
 }
 
 .ptx-navbar .button:hover {
-  background: linear-gradient(135deg, rgba(20, 181, 255, 0.5), rgba(121, 82, 245, 0.35)) !important;
-  border-color: rgba(20, 181, 255, 0.7) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(20, 181, 255, 0.3);
+  background: linear-gradient(135deg, rgba(20, 181, 255, 0.4), rgba(59, 130, 246, 0.45)) !important;
+  border-color: rgba(59, 130, 246, 0.6) !important;
+  transform: scale(1.03) !important;
+  color: #e0f4ff !important;
+  box-shadow: 0 4px 12px rgba(20, 181, 255, 0.25) !important;
 }
 
 .ptx-navbar .button.disabled {
