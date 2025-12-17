@@ -986,31 +986,30 @@ dialog#ptx-search-modal button[type="button"]:hover,
 }
 
 /* PreTeXt Search UI - Main Container */
-.ptx-navbar .searchbox,
 .searchbox {
-  position: relative !important;
-  overflow: visible !important;
+  position: relative;
 }
 
-/* Search modal - absolutely positioned dropdown overlay */
+/* Search modal - fixed centered overlay */
 .searchresultsplaceholder,
 #searchresultsplaceholder {
   display: none;
-  position: absolute !important;
-  top: calc(100% + 8px) !important;
-  right: 0 !important;
-  left: auto !important;
-  transform: none !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
   z-index: 10000 !important;
-  background: rgba(13, 17, 23, 0.98) !important;
+  background: rgba(13, 17, 23, 0.95) !important;
+  backdrop-filter: blur(18px) !important;
   border: 1px solid rgba(20, 181, 255, 0.3) !important;
-  border-radius: 12px !important;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7), 0 0 20px rgba(20, 181, 255, 0.08) !important;
-  padding: 16px !important;
-  width: clamp(320px, 50vw, 480px) !important;
-  max-height: calc(100vh - 200px) !important;
-  overflow-y: auto !important;
+  border-radius: 16px !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), 0 0 24px rgba(20, 181, 255, 0.1) !important;
+  padding: 1.5rem !important;
+  width: min(90vw, 580px) !important;
+  max-height: min(80vh, 600px) !important;
+  overflow: hidden !important;
   flex-direction: column !important;
+  gap: 1rem !important;
   box-sizing: border-box !important;
 }
 
@@ -1022,25 +1021,23 @@ dialog#ptx-search-modal button[type="button"]:hover,
 /* Search controls row */
 .search-results-controls {
   display: flex !important;
-  gap: 10px !important;
+  gap: 0.75rem !important;
   align-items: center !important;
-  margin-bottom: 12px !important;
-  padding-bottom: 12px !important;
-  border-bottom: 1px solid rgba(20, 181, 255, 0.15) !important;
   width: 100% !important;
   box-sizing: border-box !important;
+  flex-shrink: 0 !important;
 }
 
 /* Search input */
 #ptxsearch,
 .ptxsearch {
-  flex: 1 1 auto !important;
+  flex: 1 !important;
   min-width: 0 !important;
   background: rgba(18, 22, 30, 0.95) !important;
   border: 1px solid rgba(20, 181, 255, 0.25) !important;
   border-radius: 10px !important;
   color: #e0e0e0 !important;
-  padding: 10px 14px !important;
+  padding: 12px 16px !important;
   font-family: 'Aclonica', sans-serif !important;
   font-size: 14px !important;
   box-sizing: border-box !important;
@@ -1066,9 +1063,9 @@ dialog#ptx-search-modal button[type="button"]:hover,
   border: 1px solid rgba(20, 181, 255, 0.25) !important;
   border-radius: 10px !important;
   color: #14b5ff !important;
-  width: 40px !important;
-  height: 40px !important;
-  min-width: 40px !important;
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
   padding: 0 !important;
   cursor: pointer !important;
   transition: all 0.2s ease !important;
@@ -1081,6 +1078,16 @@ dialog#ptx-search-modal button[type="button"]:hover,
 #closesearchresults:hover {
   background: rgba(20, 181, 255, 0.22) !important;
   border-color: rgba(20, 181, 255, 0.4) !important;
+}
+
+/* Search results list - scrollable */
+#searchresults,
+.searchresults {
+  flex: 1 !important;
+  overflow-y: auto !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Search results heading */
