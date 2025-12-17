@@ -97,6 +97,12 @@ for file in output/web/*.html; do
     sed -i 's|</body>|<script src="graph/d3.min.js"></script>\n<script src="graph/graph-toggle.js"></script>\n</body>|' "$file"
   fi
   
+  # Fix search bar - ensure it stays hidden until clicked
+  if ! grep -q "search-fix" "$file"; then
+    sed -i 's|</head>|<style id="search-fix">.searchresultsplaceholder { display: none !important; } .searchresultsplaceholder.search-active { display: flex !important; }</style>\n</head>|' "$file"
+    sed -i 's|</body>|<script>(function(){var sp=document.getElementById("searchresultsplaceholder");var sb=document.getElementById("searchbutton");var cb=document.getElementById("closesearchresults");if(sp)sp.style.display="none";if(sb)sb.addEventListener("click",function(){if(sp){sp.classList.add("search-active");sp.style.display="flex";}});if(cb)cb.addEventListener("click",function(){if(sp){sp.classList.remove("search-active");sp.style.display="none";}});})();</script>\n</body>|' "$file"
+  fi
+  
   # Direct inline style injection for toc-frontmatter.contains-active
   sed -i 's|<li class="toc-item toc-frontmatter contains-active">|<li class="toc-item toc-frontmatter contains-active" style="background: linear-gradient(135deg, rgba(20, 181, 255, 0.22), rgba(121, 82, 245, 0.16)) !important; border-radius: 16px !important;">|g' "$file"
   sed -i 's|<li class="toc-item toc-backmatter contains-active">|<li class="toc-item toc-backmatter contains-active" style="background: linear-gradient(135deg, rgba(20, 181, 255, 0.22), rgba(121, 82, 245, 0.16)) !important; border-radius: 16px !important;">|g' "$file"

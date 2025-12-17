@@ -113,6 +113,7 @@ eBookConfig.enable_chatcodes =  false;
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 <link rel="stylesheet" type="text/css" href="external/custom-theme.css">
+<style id="search-fix">.searchresultsplaceholder { display: none !important; } .searchresultsplaceholder.search-active { display: flex !important; }</style>
 <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body id="math-journal-zettelkasten" class="pretext book ignore-math">
@@ -302,6 +303,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <script src="graph/d3.min.js"></script>
 <script src="graph/graph-toggle.js"></script>
+<script>(function(){var sp=document.getElementById("searchresultsplaceholder");var sb=document.getElementById("searchbutton");var cb=document.getElementById("closesearchresults");if(sp)sp.style.display="none";if(sb)sb.addEventListener("click",function(){if(sp){sp.classList.add("search-active");sp.style.display="flex";}});if(cb)cb.addEventListener("click",function(){if(sp){sp.classList.remove("search-active");sp.style.display="none";}});})();</script>
 <style id="toc-color-override">
 .ptx-toc li.toc-frontmatter.contains-active,
 .ptx-toc li.toc-backmatter.contains-active {
