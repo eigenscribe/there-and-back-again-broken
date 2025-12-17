@@ -239,58 +239,27 @@ function init() {
       .attr('dy', d => getNodeRadius(d, linkCounts) + 14)
       .style('pointer-events', 'none');
 
-    let hoveredNodeData = null;
-    
     node.on('mouseenter', function(event, d) {
-      if (hoveredNodeData === d) return;
-      hoveredNodeData = d;
+      d3.select(this)
+        .attr('fill', '#00e8ff')
+        .attr('r', getNodeRadius(d, linkCounts) + 3);
       
-      d.fx = d.x;
-      d.fy = d.y;
-      simulation.alphaTarget(0).stop();
-      
-      d3.select(this).attr('fill', '#00e8ff');
-      
-      const connectedIds = new Set([d.id]);
-      processedLinks.forEach(l => {
-        const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
-        const targetId = typeof l.target === 'object' ? l.target.id : l.target;
-        if (sourceId === d.id) connectedIds.add(targetId);
-        if (targetId === d.id) connectedIds.add(sourceId);
-      });
-
-      node.style('opacity', n => connectedIds.has(n.id) ? 1 : 0.15);
-      link.style('opacity', l => {
-        const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
-        const targetId = typeof l.target === 'object' ? l.target.id : l.target;
-        return (sourceId === d.id || targetId === d.id) ? 1 : 0.08;
-      });
-      label.style('opacity', n => connectedIds.has(n.id) ? 1 : 0.08);
-
       tooltip.innerHTML = buildTooltip(d);
       tooltip.classList.remove('hidden');
-      tooltip.style.left = `${event.offsetX + 15}px`;
-      tooltip.style.top = `${event.offsetY - 10}px`;
+      tooltip.style.left = `${event.pageX + 15}px`;
+      tooltip.style.top = `${event.pageY - 10}px`;
     });
 
     node.on('mousemove', function(event) {
-      tooltip.style.left = `${event.offsetX + 15}px`;
-      tooltip.style.top = `${event.offsetY - 10}px`;
+      tooltip.style.left = `${event.pageX + 15}px`;
+      tooltip.style.top = `${event.pageY - 10}px`;
     });
 
     node.on('mouseleave', function(event, d) {
-      if (hoveredNodeData) {
-        hoveredNodeData.fx = null;
-        hoveredNodeData.fy = null;
-        hoveredNodeData = null;
-      }
-      d3.select(this).attr('fill', getNodeColor(d.id));
-      node.style('opacity', 1);
-      link.style('opacity', 1);
-      label.style('opacity', 0.8);
+      d3.select(this)
+        .attr('fill', getNodeColor(d.id))
+        .attr('r', getNodeRadius(d, linkCounts));
       tooltip.classList.add('hidden');
-      simulation.alphaTarget(0.05).restart();
-      setTimeout(() => simulation.alphaTarget(0), 300);
     });
 
     node.on('click', (event, d) => {
