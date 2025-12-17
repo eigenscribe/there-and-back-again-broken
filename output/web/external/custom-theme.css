@@ -250,6 +250,7 @@ nav.ptx-toc .toc-item.contains-active .toc-title-box,
 }
 
 /* SPECIAL: Override for toc-frontmatter which uses different color palette */
+/* Frontmatter/backmatter folder styling - consistent dark purple background */
 li.toc-item.toc-frontmatter,
 li.toc-item.toc-frontmatter.contains-active,
 li.toc-item.toc-frontmatter.active,
@@ -261,11 +262,30 @@ nav.ptx-toc li.toc-frontmatter.contains-active,
 li.toc-item.toc-backmatter,
 li.toc-item.toc-backmatter.contains-active,
 li.toc-item.toc-backmatter.active,
-.ptx-toc li.toc-backmatter.contains-active {
-  background: rgba(25, 40, 55, 0.95) !important;
-  border-color: rgba(20, 181, 255, 0.5) !important;
+.ptx-toc li.toc-backmatter,
+.ptx-toc li.toc-backmatter.contains-active,
+.ptx-toc li.toc-backmatter.active,
+nav.ptx-toc li.toc-backmatter.contains-active,
+#ptx-sidebar .ptx-toc li.toc-backmatter.contains-active {
+  background: rgba(20, 18, 35, 0.95) !important;
+  border: 1px solid rgba(120, 100, 180, 0.4) !important;
   border-radius: 12px !important;
 }
+
+/* Chapter folder styling - same consistent background */
+li.toc-item.toc-chapter,
+li.toc-item.toc-chapter.contains-active,
+li.toc-item.toc-chapter.active,
+.ptx-toc li.toc-chapter,
+.ptx-toc li.toc-chapter.contains-active,
+.ptx-toc li.toc-chapter.active,
+nav.ptx-toc li.toc-chapter.contains-active,
+#ptx-sidebar .ptx-toc li.toc-chapter.contains-active {
+  background: rgba(20, 18, 35, 0.95) !important;
+  border: 1px solid rgba(120, 100, 180, 0.4) !important;
+  border-radius: 12px !important;
+}
+
 
 /* Force the title-box to be transparent */
 .ptx-toc li.toc-frontmatter.contains-active > .toc-title-box,
@@ -282,64 +302,67 @@ li.toc-backmatter.contains-active > .toc-title-box {
    PreTeXt-default red styling that's extremely resistant to CSS overrides.
    The active leaf items (actual notes/sections) correctly show cyan gradient. */
 
-/* Active/selected section - solid dark with cyan accent */
-.ptx-toc ul.structural li.active,
-.ptx-toc li.active,
-.ptx-toc .toc-item.active,
+/* Active/selected folder (contains-active) - dark purple-tinted background for contrast with purple-blue text */
+.ptx-toc ul.structural li.contains-active,
+.ptx-toc li.contains-active,
 .ptx-toc .toc-item.contains-active,
-.ptx-sidebar .ptx-toc .toc-item.active,
 .ptx-sidebar .ptx-toc .toc-item.contains-active,
-nav.ptx-toc .toc-item.active,
 nav.ptx-toc .toc-item.contains-active,
-/* Specific overrides for frontmatter, chapter, section types */
-.ptx-toc .toc-frontmatter,
-.ptx-toc .toc-frontmatter.active,
 .ptx-toc .toc-frontmatter.contains-active,
-.ptx-toc .toc-chapter,
-.ptx-toc .toc-chapter.active,
 .ptx-toc .toc-chapter.contains-active,
-.ptx-toc .toc-backmatter,
-.ptx-toc .toc-backmatter.active,
 .ptx-toc .toc-backmatter.contains-active,
 .ptx-toc li.toc-frontmatter.contains-active,
 .ptx-toc li.toc-chapter.contains-active,
 .ptx-toc li.toc-backmatter.contains-active,
-/* Ultra-specific selectors to override PreTeXt theme */
 nav#ptx-toc.ptx-toc .toc-item.toc-frontmatter.contains-active,
-nav#ptx-toc.ptx-toc .toc-item.active:not(:has(.toc-item.active)),
 nav#ptx-toc.ptx-toc.depth2 ul.structural .toc-item.contains-active,
 nav#ptx-toc.ptx-toc.depth2 ul.structural ul.structural .toc-item.contains-active,
-#ptx-sidebar .ptx-toc .toc-item.contains-active,
-#ptx-sidebar .ptx-toc .toc-item.active {
-  background: rgba(25, 40, 55, 0.95) !important;
-  border-color: rgba(20, 181, 255, 0.5) !important;
+#ptx-sidebar .ptx-toc .toc-item.contains-active {
+  background: rgba(20, 18, 35, 0.95) !important;
+  border: 1px solid rgba(120, 100, 180, 0.4) !important;
   border-radius: 12px !important;
-  color: #00e8ff !important;
 }
 
-/* Root-level active sections - same styling */
+/* Active leaf item (article/note selection) - slightly lighter with purple accent */
+.ptx-toc ul.structural li.active,
+.ptx-toc li.active,
+.ptx-toc .toc-item.active,
+.ptx-sidebar .ptx-toc .toc-item.active,
+nav.ptx-toc .toc-item.active,
+.ptx-toc .toc-frontmatter.active,
+.ptx-toc .toc-chapter.active,
+.ptx-toc .toc-backmatter.active,
+nav#ptx-toc.ptx-toc .toc-item.active:not(:has(.toc-item.active)),
+#ptx-sidebar .ptx-toc .toc-item.active {
+  background: rgba(20, 18, 35, 0.95) !important;
+  border: 1px solid rgba(120, 100, 180, 0.4) !important;
+  border-radius: 12px !important;
+}
+
+/* Root-level active sections - same dark styling */
 .ptx-toc ul.structural > li.active,
+.ptx-toc ul.structural > li.contains-active,
 .ptx-toc > ul > li.active,
 .ptx-toc > ul > li.contains-active {
-  background: rgba(25, 40, 55, 0.95) !important;
-  border-color: rgba(20, 181, 255, 0.5) !important;
+  background: rgba(20, 18, 35, 0.95) !important;
+  border: 1px solid rgba(120, 100, 180, 0.4) !important;
   border-radius: 12px !important;
 }
 
-/* Nested active items inside expanded sections */
+/* Nested items inside expanded folders - slightly lighter */
 .ptx-toc .toc-item.active .toc-item,
 .ptx-toc .toc-item.contains-active .toc-item {
-  background: rgba(30, 35, 45, 0.9) !important;
+  background: rgba(25, 22, 40, 0.9) !important;
   border-radius: 12px !important;
 }
 
-/* The actual selected/active leaf item - bright cyan background for visibility */
+/* The actual selected article/leaf item - distinct highlight */
 .ptx-toc .toc-item.active .toc-item.active,
 .ptx-toc .toc-item.contains-active .toc-item.active,
 .ptx-toc .toc-item.active:not(:has(.toc-item)),
 nav.ptx-toc .toc-item.active:not(:has(.toc-item)) {
-  background: rgba(20, 181, 255, 0.35) !important;
-  border-color: rgba(20, 181, 255, 0.7) !important;
+  background: rgba(80, 60, 120, 0.4) !important;
+  border: 1px solid rgba(160, 130, 220, 0.5) !important;
   border-radius: 12px !important;
 }
 
