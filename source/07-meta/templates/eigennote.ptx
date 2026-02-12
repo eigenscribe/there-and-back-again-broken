@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<subsection xml:id="sec-foundations-note-001" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Note 001: [Add Title]</title>
+<subsection xml:id="sec-eigennote-note-001" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Eigennote: Zettel Template</title>
   
   <p>
     <term>Status:</term> <alert>🧪</alert> Draft
@@ -15,7 +15,7 @@
 
   <introduction>
     <p>
-      Brief context or motivation for this note.
+      Brief context or motivation for this eigennote (zettel-style template).
     </p>
   </introduction>
 
@@ -32,7 +32,7 @@
 
   <!-- Cross-references to related notes -->
   <p>
-    <term>Related notes:</term> See <xref ref="sec-foundations-note-002" />, <xref ref="sec-methods-note-001" />
+    <term>Related notes:</term> See <xref ref="sec-methods-note-001" />
   </p>
 
   <!-- Links to external sources -->

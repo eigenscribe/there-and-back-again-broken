@@ -15,15 +15,7 @@
     </p>
   </introduction>
 
-  <!-- Foundations section -->
-  <section xml:id="sec-foundations-chapter">
-    <title>Foundations</title>
-    <introduction>
-      <p>Core concepts and fundamental building blocks.</p>
-    </introduction>
-    <!-- Individual notes will be included here -->
-    <xi:include href="./foundations/note-001.ptx" />
-  </section>
+  <!-- (Foundations moved to Meta/Templates as Eigennote) -->
 
   <!-- Methods section -->
   <section xml:id="sec-methods-chapter">

@@ -136,74 +136,11 @@ var ptx_lunr_docs = [
   "body": " Note Status Indicators  Each note is tagged with its development stage. Look for indicators like:   🧪 Draft—rough exploration  📝 Developing—in progress  ✓ Stable—canonical form  💎 Gem—particularly valuable insight   "
 },
 {
-  "id": "sec-foundations-chapter",
-  "level": "1",
-  "url": "sec-foundations-chapter.html",
-  "type": "Section",
-  "number": "1.1",
-  "title": "Foundations",
-  "body": " Foundations   Core concepts and fundamental building blocks.     Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: See ,     Sources: See Field Notes for related papers and references.   "
-},
-{
-  "id": "sec-foundations-note-001-2",
-  "level": "2",
-  "url": "sec-foundations-chapter.html#sec-foundations-note-001-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Status: "
-},
-{
-  "id": "sec-foundations-note-001-3",
-  "level": "2",
-  "url": "sec-foundations-chapter.html#sec-foundations-note-001-3",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Date Created: "
-},
-{
-  "id": "sec-foundations-note-001-4",
-  "level": "2",
-  "url": "sec-foundations-chapter.html#sec-foundations-note-001-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Tags: "
-},
-{
-  "id": "sec-foundations-note-001-7",
-  "level": "2",
-  "url": "sec-foundations-chapter.html#sec-foundations-note-001-7",
-  "type": "Note",
-  "number": "1.1.1",
-  "title": "Key Insight.",
-  "body": " Key Insight  Highlight the main takeaway if applicable.  "
-},
-{
-  "id": "sec-foundations-note-001-8",
-  "level": "2",
-  "url": "sec-foundations-chapter.html#sec-foundations-note-001-8",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Related notes: "
-},
-{
-  "id": "sec-foundations-note-001-9",
-  "level": "2",
-  "url": "sec-foundations-chapter.html#sec-foundations-note-001-9",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Sources: "
-},
-{
   "id": "sec-methods-chapter",
   "level": "1",
   "url": "sec-methods-chapter.html",
   "type": "Section",
-  "number": "1.2",
+  "number": "1.1",
   "title": "Methods",
   "body": " Methods   Techniques, approaches, and procedural knowledge.     Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: See ,     Sources: See Field Notes for related papers and references.   "
 },
@@ -239,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-methods-chapter.html#sec-methods-note-001-7",
   "type": "Note",
-  "number": "1.2.1",
+  "number": "1.1.1",
   "title": "Key Insight.",
   "body": " Key Insight  Highlight the main takeaway if applicable.  "
 },
@@ -266,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-interpretability-chapter.html",
   "type": "Section",
-  "number": "1.3",
+  "number": "1.2",
   "title": "Interpretability",
   "body": " Interpretability   Understanding mechanisms, reasoning, and explanations.     Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: See ,     Sources: See Field Notes for related papers and references.   "
 },
@@ -302,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-interpretability-chapter.html#sec-interpretability-note-001-7",
   "type": "Note",
-  "number": "1.3.1",
+  "number": "1.2.1",
   "title": "Key Insight.",
   "body": " Key Insight  Highlight the main takeaway if applicable.  "
 },
@@ -329,7 +266,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-unifications-chapter.html",
   "type": "Section",
-  "number": "1.4",
+  "number": "1.3",
   "title": "Unifications",
   "body": " Unifications   Connections across domains, unified frameworks, and meta-insights.     Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: See ,     Sources: See Field Notes for related papers and references.   "
 },
@@ -365,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-unifications-chapter.html#sec-unifications-note-001-7",
   "type": "Note",
-  "number": "1.4.1",
+  "number": "1.3.1",
   "title": "Key Insight.",
   "body": " Key Insight  Highlight the main takeaway if applicable.  "
 },
@@ -782,6 +719,69 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "Document decision rationales: "
+},
+{
+  "id": "sec-meta-templates",
+  "level": "1",
+  "url": "sec-meta-templates.html",
+  "type": "Section",
+  "number": "6.4",
+  "title": "Templates",
+  "body": " Templates   Reusable templates and canonical note forms (eg. Zettel \/ Eigennote templates).    Eigennote: Zettel Template   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this eigennote (zettel-style template).   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: See     Sources: See Field Notes for related papers and references.   "
+},
+{
+  "id": "sec-eigennote-note-001-2",
+  "level": "2",
+  "url": "sec-meta-templates.html#sec-eigennote-note-001-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Status: "
+},
+{
+  "id": "sec-eigennote-note-001-3",
+  "level": "2",
+  "url": "sec-meta-templates.html#sec-eigennote-note-001-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Date Created: "
+},
+{
+  "id": "sec-eigennote-note-001-4",
+  "level": "2",
+  "url": "sec-meta-templates.html#sec-eigennote-note-001-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Tags: "
+},
+{
+  "id": "sec-eigennote-note-001-7",
+  "level": "2",
+  "url": "sec-meta-templates.html#sec-eigennote-note-001-7",
+  "type": "Note",
+  "number": "6.4.1",
+  "title": "Key Insight.",
+  "body": " Key Insight  Highlight the main takeaway if applicable.  "
+},
+{
+  "id": "sec-eigennote-note-001-8",
+  "level": "2",
+  "url": "sec-meta-templates.html#sec-eigennote-note-001-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Related notes: "
+},
+{
+  "id": "sec-eigennote-note-001-9",
+  "level": "2",
+  "url": "sec-meta-templates.html#sec-eigennote-note-001-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Sources: "
 },
 {
   "id": "sec-glossary-entries",

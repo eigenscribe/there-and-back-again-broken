@@ -35,4 +35,12 @@
     <xi:include href="./citations.ptx" />
   </section>
 
+  <section xml:id="sec-meta-templates">
+    <title>Templates</title>
+    <introduction>
+      <p>Reusable templates and canonical note forms (eg. Zettel / Eigennote templates).</p>
+    </introduction>
+    <xi:include href="./templates/eigennote.ptx" />
+  </section>
+
 </chapter>
