@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-eigenotes" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Eigenotes</title>
+  <introduction>
+    <p>Integrated, synthesized knowledge.</p>
+  </introduction>
+
+  <xi:include href="./Fundamentals/sec-fundamentals.ptx" />
+  <xi:include href="./Bridges/sec-bridges.ptx" />
+  <xi:include href="./OGs/sec-ogs.ptx" />
+
+</chapter>

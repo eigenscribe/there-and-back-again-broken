@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<part xml:id="pt-meta" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Meta</title>
+  <introduction>
+    <p>Workflow, systems, and methodological reflections.</p>
+  </introduction>
+
+  <chapter xml:id="ch-cheat-sheets" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Cheat Sheets</title>
+    <introduction>
+      <p>Quick reference guides and helpful resources.</p>
+    </introduction>
+    <xi:include href="./Cheat Sheets/python.ptx" />
+    <xi:include href="./Cheat Sheets/git.ptx" />
+  </chapter>
+
+  <xi:include href="./workflow.ptx" />
+  <xi:include href="./zettelkasten-method.ptx" />
+
+</part>

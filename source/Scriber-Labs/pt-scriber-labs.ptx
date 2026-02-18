@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<part xml:id="pt-scriber-labs" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Scriber Labs</title>
+  <introduction>
+    <p>Project writeups, explorations, and research questions.</p>
+  </introduction>
+
+  <chapter xml:id="ch-lab-notebook" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Lab Notebook</title>
+    <introduction>
+      <p>Research findings and experimental insights.</p>
+    </introduction>
+    <xi:include href="./Lab Notebook/loss-gems.ptx" />
+  </chapter>
+
+  <chapter xml:id="ch-projects" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Projects</title>
+    <introduction>
+      <p>Project documentation and writeups.</p>
+    </introduction>
+  </chapter>
+
+  <chapter xml:id="ch-research-questions" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Research Questions</title>
+    <introduction>
+      <p>Open questions and investigative frameworks.</p>
+    </introduction>
+    <xi:include href="./Research Questions/interpretability/note-001.ptx" />
+    <xi:include href="./Research Questions/methods/note-001.ptx" />
+    <xi:include href="./Research Questions/unifications/note-001.ptx" />
+  </chapter>
+
+</part>

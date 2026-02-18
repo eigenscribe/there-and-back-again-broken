@@ -2,70 +2,117 @@
   "$schema": "notes-graph-schema.json",
   "nodes": [
     {
-      "id": "sec-topology-intro",
-      "title": "Introduction to Topology",
-      "url": "sec-topology-intro.html",
-      "tags": ["topology", "foundations"],
-      "description": "Basic concepts and definitions in topology"
+      "id": "sec-fundamentals",
+      "title": "Fundamentals",
+      "url": "sec-fundamentals.html",
+      "tags": ["eigenotes", "fundamentals"],
+      "description": "Foundational concepts and principles"
     },
     {
-      "id": "sec-metric-spaces",
-      "title": "Metric Spaces",
-      "url": "sec-metric-spaces.html",
-      "tags": ["topology", "metric-spaces", "analysis"],
-      "description": "Properties of metric spaces and distance functions"
+      "id": "sec-bridges",
+      "title": "Bridges",
+      "url": "sec-bridges.html",
+      "tags": ["eigenotes", "bridges"],
+      "description": "Connections between concepts"
     },
     {
-      "id": "sec-continuous-functions",
-      "title": "Continuous Functions",
-      "url": "sec-continuous-functions.html",
-      "tags": ["topology", "continuity", "functions"],
-      "description": "Continuity in topological and metric contexts"
+      "id": "sec-ogs",
+      "title": "OGs",
+      "url": "sec-ogs.html",
+      "tags": ["eigenotes", "ogs"],
+      "description": "Original ideas and seminal works"
     },
     {
-      "id": "sec-convergence-sequences",
-      "title": "Convergence of Sequences",
-      "url": "sec-convergence-sequences.html",
-      "tags": ["analysis", "sequences", "convergence"],
-      "description": "Sequence convergence in metric and topological spaces"
+      "id": "sec-field-papers",
+      "title": "Papers",
+      "url": "sec-field-papers.html",
+      "tags": ["field-notes", "papers"],
+      "description": "Research papers and academic sources"
     },
     {
-      "id": "sec-common-definitions",
-      "title": "Common Definitions",
-      "url": "sec-common-definitions.html",
-      "tags": ["reference", "definitions"],
-      "description": "Reference list of common mathematical definitions"
+      "id": "sec-field-books",
+      "title": "Books",
+      "url": "sec-field-books.html",
+      "tags": ["field-notes", "books"],
+      "description": "Books and monographs"
+    },
+    {
+      "id": "sec-field-talks",
+      "title": "Talks",
+      "url": "sec-field-talks.html",
+      "tags": ["field-notes", "talks"],
+      "description": "Lectures, seminars, and presentations"
+    },
+    {
+      "id": "sec-field-repositories",
+      "title": "Repositories",
+      "url": "sec-field-repositories.html",
+      "tags": ["field-notes", "repositories"],
+      "description": "Code repositories and software projects"
+    },
+    {
+      "id": "sec-fleeting-notes",
+      "title": "Fleeting Notes",
+      "url": "sec-fleeting-notes.html",
+      "tags": ["eigenthoughts", "fleeting"],
+      "description": "Quick ideas and temporary thoughts"
+    },
+    {
+      "id": "pref-conventions",
+      "title": "Conventions",
+      "url": "pref-conventions.html",
+      "tags": ["frontmatter", "conventions"],
+      "description": "Notation and symbol conventions"
+    },
+    {
+      "id": "sec-python-cheat-sheet",
+      "title": "Python Cheat Sheet",
+      "url": "sec-python-cheat-sheet.html",
+      "tags": ["meta", "cheat-sheets", "python"],
+      "description": "Quick Python reference guide"
+    },
+    {
+      "id": "sec-git-cheat-sheet",
+      "title": "Git Cheat Sheet",
+      "url": "sec-git-cheat-sheet.html",
+      "tags": ["meta", "cheat-sheets", "git"],
+      "description": "Quick Git reference guide"
     }
   ],
   "links": [
     {
-      "source": "sec-topology-intro",
-      "target": "sec-metric-spaces",
+      "source": "sec-fundamentals",
+      "target": "sec-bridges",
       "type": "builds-on"
     },
     {
-      "source": "sec-metric-spaces",
-      "target": "sec-continuous-functions",
+      "source": "sec-bridges",
+      "target": "sec-ogs",
       "type": "prerequisite"
     },
     {
-      "source": "sec-metric-spaces",
-      "target": "sec-convergence-sequences",
-      "type": "prerequisite"
-    },
-    {
-      "source": "sec-continuous-functions",
-      "target": "sec-convergence-sequences",
+      "source": "sec-fundamentals",
+      "target": "sec-field-papers",
       "type": "related"
     },
     {
-      "source": "sec-common-definitions",
-      "target": "sec-topology-intro",
+      "source": "sec-field-papers",
+      "target": "sec-field-books",
+      "type": "related"
+    },
+    {
+      "source": "pref-conventions",
+      "target": "sec-fundamentals",
       "type": "reference"
     },
     {
-      "source": "sec-common-definitions",
-      "target": "sec-metric-spaces",
+      "source": "sec-python-cheat-sheet",
+      "target": "sec-bridges",
+      "type": "reference"
+    },
+    {
+      "source": "sec-git-cheat-sheet",
+      "target": "sec-field-repositories",
       "type": "reference"
     }
   ]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<backmatter xml:id="backmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+  <appendix xml:id="app-glossary">
+    <title>Glossary</title>
+    <xi:include href="./glossary.ptx" />
+  </appendix>
+
+  <appendix xml:id="app-bibliography">
+    <title>Bibliography</title>
+    <xi:include href="./bibliography.ptx" />
+  </appendix>
+
+  <appendix xml:id="app-colophon">
+    <title>Colophon</title>
+    <xi:include href="./colophon.ptx" />
+  </appendix>
+
+  <index>
+    <title>Index</title>
+  </index>
+
+</backmatter>

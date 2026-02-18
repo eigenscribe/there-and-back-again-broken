@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="subsec-abbreviations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Abbreviations</title>
+
+  <list>
+    <title>Machine Learning Abbreviations</title>
+    <li><term>PIML</term>: Physics Informed Machine Learning</li>
+    <li><term>PINN</term>: Physics Informed Neural Networks</li>
+  </list>
+
+
+</subsection>

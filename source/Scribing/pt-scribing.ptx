@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<part xml:id="pt-scribing" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Scribing</title>
+  <introduction>
+    <p>Your integrated knowledge, stable synthesis, and explorations.</p>
+  </introduction>
+
+  <xi:include href="./eigenotes/ch-eigenotes.ptx" />
+  <xi:include href="./Field-Notes/ch-field-notes.ptx" />
+  <xi:include href="./eigenthoughts/ch-eigenthoughts.ptx" />
+  <xi:include href="./Workbench/ch-workbench.ptx" />
+
+</part>

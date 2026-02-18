@@ -11,42 +11,28 @@
     <!-- ========================================
          FRONT MATTER
          ======================================== -->
-    <xi:include href="./01-frontmatter/frontmatter-wrapper.ptx" />
+    <xi:include href="./Front Matter/frontmatter-wrapper.ptx" />
 
     <!-- ========================================
-         SCRIBING: Stable, integrated synthesis
+         SCRIBING: Stable integration and synthesis
          ======================================== -->
-    <xi:include href="./02-scribing/ch-scribing.ptx" />
+    <xi:include href="./Scribing/pt-scribing.ptx" />
 
     <!-- ========================================
-         EIGENTHOUGHTS: Pre-canonical ideas
+         SCRIBER LABS: Project writeups and research
          ======================================== -->
-    <xi:include href="./03-eigenthoughts/ch-eigenthoughts.ptx" />
+    <xi:include href="./Scriber-Labs/pt-scriber-labs.ptx" />
 
     <!-- ========================================
-         SCRIBER LABS: Project writeups
+         META: Workflow and systems
          ======================================== -->
-    <xi:include href="./04-scriber-labs/ch-scriber-labs.ptx" />
-
-    <!-- ========================================
-         FIELD NOTES: External source ingestion
-         ======================================== -->
-    <xi:include href="./05-field-notes/ch-field-notes.ptx" />
-
-    <!-- ========================================
-         PRACTICE: Exercises and explorations
-         ======================================== -->
-    <xi:include href="./06-practice/ch-practice.ptx" />
-
-    <!-- ========================================
-         META: Workflow, systems, tooling
-         ======================================== -->
-    <xi:include href="./07-meta/ch-meta.ptx" />
+    <xi:include href="./Meta/pt-meta.ptx" />
 
     <!-- ========================================
          BACK MATTER: Glossary, index, bibliography
          ======================================== -->
-    <xi:include href="./08-backmatter/backmatter-wrapper.ptx" />
+    <xi:include href="./Back Matter/backmatter-wrapper.ptx" />
 
   </book>
 </pretext>
+

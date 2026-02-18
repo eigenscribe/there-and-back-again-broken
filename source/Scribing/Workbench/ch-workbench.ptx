@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-workbench" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Workbench</title>
+  <introduction>
+    <p>Exercises and explorations.</p>
+  </introduction>
+
+  <xi:include href="./exercises.ptx" />
+
+</chapter>
