@@ -1,0 +1,26 @@
+<!-- tags: geometric-algebra, linear-algebra -->
+<subsection xml:id="subsec-wedge-product">
+<title>Wedge Product</title>
+<paragraphs xml:id="para-wedge-definition">
+<title>Definition</title>
+<p>The wedge product between two vectors <m>\mathbf{a},\mathbf{b}\in \mathcal{V}_n</m> where <m>\mathcal{V_n} \sube \mathbb{R}^n </m> is given by:</p>
+<me>\mathbf{a}\wedge\mathbf{b} = |a| |b| \underbrace{\mathbf{e_\mu}\mathbf{e_\nu}}_{=\mathbf{i}} \sin{\theta}</me>
+<p>where <m>\mathbf{e_\mu}\perp\mathbf{e_\nu} \Rightarrow \mathbf{i}^2=-1</m>.</p>
+<note>
+<p>The wedge product is the antisymmetric component of the geometric product.</p>
+</note>
+</paragraphs>
+<paragraphs xml:id="para-wedge-see-also">
+<title>See Also</title>
+<ul>
+<li><p><em>Geometric Product</em></p></li>
+<li><p><em>Dot Product</em></p></li>
+</ul>
+</paragraphs>
+<paragraphs xml:id="para-wedge-references">
+<title>References</title>
+<ul>
+<li><p>[@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra</p></li>
+</ul>
+</paragraphs>
+</subsection>

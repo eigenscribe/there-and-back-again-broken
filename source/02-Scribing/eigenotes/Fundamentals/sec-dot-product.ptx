@@ -1,0 +1,25 @@
+<!-- tags: geometric-algebra, linear-algebra -->
+<subsection xml:id="subsec-dot-product">
+<title>Dot Product</title>
+<paragraphs xml:id="para-dot-definition">
+<title>Definition</title>
+<p>The dot product between two vectors <m>\mathbf{a},\mathbf{b}\in \mathcal{V}_n</m> where <m>\mathcal{V_n} \sube \mathbb{R}^n </m> is given by:</p>
+<me>\mathbf{a}\cdot\mathbf{b} = |a| |b| \cos{\theta} .</me>
+<note>
+<p>The dot product is the symmetric component of the geometric product.</p>
+</note>
+</paragraphs>
+<paragraphs xml:id="para-dot-see-also">
+<title>See Also</title>
+<ul>
+<li><p><em>Geometric Product</em></p></li>
+<li><p><em>Wedge Product</em></p></li>
+</ul>
+</paragraphs>
+<paragraphs xml:id="para-dot-references">
+<title>References</title>
+<ul>
+<li><p>[@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra</p></li>
+</ul>
+</paragraphs>
+</subsection>

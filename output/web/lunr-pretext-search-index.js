@@ -142,7 +142,43 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Fundamentals",
-  "body": " Fundamentals  "
+  "body": " Fundamentals    Dot Product   Definition  The dot product between two vectors where is given by:    The dot product is the symmetric component of the geometric product.     See Also   Geometric Product  Wedge Product     References   [@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra      Geometric Product   Definition  A geometric product between where is given by:    The geometric product can be decomposed into symmetric (dot product) and antisymmetric (wedge product) parts.     See Also   Dot Product  Wedge Product     References   [@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra      Wedge Product   Definition  The wedge product between two vectors where is given by:   where .   The wedge product is the antisymmetric component of the geometric product.     See Also   Geometric Product  Dot Product     References   [@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra     "
+},
+{
+  "id": "para-dot-definition-4",
+  "level": "2",
+  "url": "sec-fundamentals.html#para-dot-definition-4",
+  "type": "Note",
+  "number": "1.1.1",
+  "title": "",
+  "body": " The dot product is the symmetric component of the geometric product.  "
+},
+{
+  "id": "para-geom-definition-2",
+  "level": "2",
+  "url": "sec-fundamentals.html#para-geom-definition-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "geometric product "
+},
+{
+  "id": "para-geom-definition-4",
+  "level": "2",
+  "url": "sec-fundamentals.html#para-geom-definition-4",
+  "type": "Note",
+  "number": "1.1.2",
+  "title": "",
+  "body": " The geometric product can be decomposed into symmetric (dot product) and antisymmetric (wedge product) parts.  "
+},
+{
+  "id": "para-wedge-definition-5",
+  "level": "2",
+  "url": "sec-fundamentals.html#para-wedge-definition-5",
+  "type": "Note",
+  "number": "1.1.3",
+  "title": "",
+  "body": " The wedge product is the antisymmetric component of the geometric product.  "
 },
 {
   "id": "sec-bridges",

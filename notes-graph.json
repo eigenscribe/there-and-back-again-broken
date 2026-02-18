@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "sec-dot-product",
+      "title": "Dot Product",
+      "url": "sec-dot-product.html",
+      "tags": [
+        "geometric-algebra",
+        "linear-algebra"
+      ],
+      "aliases": [
+        "scalar product",
+        "inner product"
+      ],
+      "description": "# Dot Product\n\n## Definition\n\nThe dot product between two vectors $\\mathbf{a},\\mathbf{b}\\in \\mathcal..."
+    },
+    {
+      "id": "sec-wedge-product",
+      "title": "Wedge Product",
+      "url": "sec-wedge-product.html",
+      "tags": [
+        "geometric-algebra",
+        "linear-algebra"
+      ],
+      "aliases": [
+        "exterior product",
+        "bivector product"
+      ],
+      "description": "# Wedge Product\n\n## Definition\n\nThe wedge product between two vectors $\\mathbf{a},\\mathbf{b}\\in \\mat..."
+    },
+    {
+      "id": "sec-geometric-product",
+      "title": "Geometric Product",
+      "url": "sec-geometric-product.html",
+      "tags": [
+        "geometric-algebra",
+        "linear-algebra"
+      ],
+      "aliases": [
+        "Clifford product"
+      ],
+      "description": "# Geometric Product\n\n## Definition\n\nA **geometric product** between $\\mathbf{a},\\mathbf{b}\\in \\mathc..."
+    }
+  ],
+  "links": [
+    {
+      "source": "sec-dot-product",
+      "target": "sec-geometric-product",
+      "type": "reference"
+    },
+    {
+      "source": "sec-dot-product",
+      "target": "sec-wedge-product",
+      "type": "reference"
+    },
+    {
+      "source": "sec-wedge-product",
+      "target": "sec-dot-product",
+      "type": "backlink"
+    },
+    {
+      "source": "sec-geometric-product",
+      "target": "sec-dot-product",
+      "type": "backlink"
+    },
+    {
+      "source": "sec-wedge-product",
+      "target": "sec-geometric-product",
+      "type": "reference"
+    },
+    {
+      "source": "sec-geometric-product",
+      "target": "sec-wedge-product",
+      "type": "backlink"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<!-- tags: geometric-algebra, linear-algebra -->
+<subsection xml:id="subsec-geometric-product">
+<title>Geometric Product</title>
+<paragraphs xml:id="para-geom-definition">
+<title>Definition</title>
+<p>A <term>geometric product</term> between <m>\mathbf{a},\mathbf{b}\in \mathcal{V}_n</m> where <m>\mathcal{V_n} \sube \mathbb{R}^n </m> is given by:</p>
+<me>\mathbf{a}\mathbf{b} = \mathbf{a}\cdot\mathbf{b} + \mathbf{a}\wedge\mathbf{b}</me>
+<note>
+<p>The geometric product can be decomposed into symmetric (dot product) and antisymmetric (wedge product) parts.</p>
+</note>
+</paragraphs>
+<paragraphs xml:id="para-geom-see-also">
+<title>See Also</title>
+<ul>
+<li><p><em>Dot Product</em></p></li>
+<li><p><em>Wedge Product</em></p></li>
+</ul>
+</paragraphs>
+<paragraphs xml:id="para-geom-references">
+<title>References</title>
+<ul>
+<li><p>[@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra</p></li>
+</ul>
+</paragraphs>
+</subsection>
