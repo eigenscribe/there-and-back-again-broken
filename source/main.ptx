@@ -11,27 +11,27 @@
     <!-- ========================================
          FRONT MATTER
          ======================================== -->
-    <xi:include href="./Front Matter/frontmatter-wrapper.ptx" />
+    <xi:include href="./01-Front Matter/frontmatter-wrapper.ptx" />
 
     <!-- ========================================
          SCRIBING: Stable integration and synthesis
          ======================================== -->
-    <xi:include href="./Scribing/pt-scribing.ptx" />
+    <xi:include href="./02-Scribing/pt-scribing.ptx" />
 
     <!-- ========================================
          SCRIBER LABS: Project writeups and research
          ======================================== -->
-    <xi:include href="./Scriber-Labs/pt-scriber-labs.ptx" />
+    <xi:include href="./03-Scriber-Labs/pt-scriber-labs.ptx" />
 
     <!-- ========================================
          META: Workflow and systems
          ======================================== -->
-    <xi:include href="./Meta/pt-meta.ptx" />
+    <xi:include href="./04-Meta/pt-meta.ptx" />
 
     <!-- ========================================
          BACK MATTER: Glossary, index, bibliography
          ======================================== -->
-    <xi:include href="./Back Matter/backmatter-wrapper.ptx" />
+    <xi:include href="./05-Back Matter/backmatter-wrapper.ptx" />
 
   </book>
 </pretext>

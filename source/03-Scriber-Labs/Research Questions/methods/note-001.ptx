@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<subsection xml:id="sec-unifications-note-001" xmlns:xi="http://www.w3.org/2001/XInclude">
+<subsection xml:id="sec-methods-note-001" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Note 001: [Add Title]</title>
   
   <p>
@@ -32,7 +32,7 @@
 
   <!-- Cross-references to related notes -->
   <p>
-    <term>Related notes:</term> See <xref ref="sec-unifications-note-002" />, <xref ref="sec-methods-note-001" />
+    <term>Related notes:</term> [Add references to related notes]
   </p>
 
   <!-- Links to external sources -->

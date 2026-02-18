@@ -1,0 +1,47 @@
+name: Build and Deploy PreTeXt
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install PreTeXt
+        run: |
+          pip install pretext
+
+      - name: Build PreTeXt project
+        run: |
+          cd $GITHUB_WORKSPACE
+          pretext build web
+
+      - name: Run build script
+        run: |
+          cd $GITHUB_WORKSPACE
+          chmod +x build.sh
+          ./build.sh
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output/web
+          cname: there-and-back-again.eigenscribe.com

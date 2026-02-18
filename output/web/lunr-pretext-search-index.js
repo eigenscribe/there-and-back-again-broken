@@ -277,7 +277,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "8.1",
   "title": "Note 001: [Add Title]",
-  "body": " Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: See ,     Sources: See Field Notes for related papers and references.  "
+  "body": " Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: [Add references to related notes]    Sources: See Field Notes for related papers and references.  "
 },
 {
   "id": "sec-interpretability-note-001-2",
@@ -340,7 +340,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "8.2",
   "title": "Note 001: [Add Title]",
-  "body": " Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: See ,     Sources: See Field Notes for related papers and references.  "
+  "body": " Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: [Add references to related notes]    Sources: See Field Notes for related papers and references.  "
 },
 {
   "id": "sec-methods-note-001-2",
@@ -403,7 +403,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "8.3",
   "title": "Note 001: [Add Title]",
-  "body": " Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: See ,     Sources: See Field Notes for related papers and references.  "
+  "body": " Note 001: [Add Title]   Status:  🧪 Draft   Date Created: [YYYY-MM-DD]   Tags: [tag1, tag2, tag3]   Brief context or motivation for this note.   Add your content here.   Key Insight  Highlight the main takeaway if applicable.     Related notes: [Add references to related notes]    Sources: See Field Notes for related papers and references.  "
 },
 {
   "id": "sec-unifications-note-001-2",
