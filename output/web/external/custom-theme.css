@@ -153,24 +153,51 @@ body.pretext {
   grid-template-areas: "sidebar main" !important;
 }
 
-.ptx-sidebar {
+.ptx-sidebar,
+#ptx-sidebar,
+aside.ptx-sidebar {
   grid-area: sidebar !important;
   width: 350px !important;
   min-width: 350px !important;
   max-width: 350px !important;
-  background: rgba(13, 17, 23, 0.4) !important;
-  border-right: 1px solid rgba(20, 181, 255, 0.2);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.3), inset -1px 0 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(10, 8, 20, 0.95), rgba(15, 12, 25, 0.92)) !important;
+  background-color: rgba(10, 8, 20, 0.95) !important;
+  border-right: 2px solid rgba(20, 181, 255, 0.35) !important;
+  border-image: linear-gradient(180deg, rgba(0, 232, 255, 0.4), rgba(121, 82, 245, 0.3)) 1 !important;
+  backdrop-filter: blur(20px) saturate(180%) brightness(1.05) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) brightness(1.05) !important;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5), inset -1px 0 0 rgba(255, 255, 255, 0.08), inset 0 0 20px rgba(20, 181, 255, 0.05) !important;
   overflow-y: auto !important;
   height: 100vh !important;
   position: sticky !important;
   top: 0 !important;
 }
 
-.ptx-main {
-  grid-area: main !important;
+/* Ensure light mode doesn't override */
+:root.light-mode .ptx-sidebar,
+:root.light-mode #ptx-sidebar,
+body.light-mode .ptx-sidebar,
+body.light-mode #ptx-sidebar {
+  background: linear-gradient(180deg, rgba(10, 8, 20, 0.95), rgba(15, 12, 25, 0.92)) !important;
+  background-color: rgba(10, 8, 20, 0.95) !important;
+  border-right: 2px solid rgba(20, 181, 255, 0.35) !important;
+}
+
+/* Hide native scrollbar and style custom one */
+.ptx-sidebar::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(20, 181, 255, 0.1);
+}
+
+.ptx-sidebar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(0, 232, 255, 0.4), rgba(121, 82, 245, 0.4));
+  border-radius: 4px;
+  border: 1px solid rgba(20, 181, 255, 0.2);
+}
+
+.ptx-sidebar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(0, 232, 255, 0.6), rgba(121, 82, 245, 0.6));
+  box-shadow: 0 0 8px rgba(0, 232, 255, 0.3);
 }
 
 .ptx-sidebar .ptx-toc {
@@ -217,19 +244,35 @@ body.pretext {
 }
 
 .ptx-toc ul.structural li,
-.ptx-toc .toc-item {
-  background: rgba(30, 35, 45, 0.9) !important;
-  border: 1px solid rgba(60, 65, 75, 0.6) !important;
+.ptx-toc .toc-item,
+nav#ptx-toc li,
+nav#ptx-toc .toc-item,
+#ptx-sidebar .toc-item,
+#ptx-sidebar li.toc-item {
+  background: linear-gradient(135deg, rgba(20, 181, 255, 0.15), rgba(121, 82, 245, 0.12)) !important;
+  background-color: rgba(20, 40, 60, 0.85) !important;
+  border: 1px solid rgba(20, 181, 255, 0.35) !important;
   border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(20, 181, 255, 0.15) !important;
+  margin-bottom: 6px !important;
+  padding: 0.5rem 0.75rem !important;
+  transition: all 0.3s ease;
+}
   margin-bottom: 6px !important;
   padding: 0.5rem 0.75rem !important;
   transition: all 0.3s ease;
 }
 
 .ptx-toc ul.structural li:hover,
-.ptx-toc .toc-item:hover {
-  background: rgba(40, 50, 60, 0.95) !important;
-  border-color: rgba(20, 181, 255, 0.4) !important;
+.ptx-toc .toc-item:hover,
+nav#ptx-toc li:hover,
+nav#ptx-toc .toc-item:hover,
+#ptx-sidebar li.toc-item:hover,
+#ptx-sidebar .toc-item:hover {
+  background: linear-gradient(135deg, rgba(20, 181, 255, 0.25), rgba(121, 82, 245, 0.2)) !important;
+  background-color: rgba(30, 50, 80, 0.9) !important;
+  border-color: rgba(20, 181, 255, 0.55) !important;
+  box-shadow: 0 4px 12px rgba(0, 232, 255, 0.2), inset 0 1px 0 rgba(20, 181, 255, 0.25) !important;
 }
 
 /* FORCE override PreTeXt's toc-title-box backgrounds - ultra high specificity */
@@ -1473,4 +1516,51 @@ body .ptx-navbar .searchbox #searchresultsplaceholder.search-active,
   .ptx-sidebar .ptx-toc {
     max-height: 50vh !important;
   }
+}
+
+/* ============================================
+   FINAL EIGENSCRIBE THEME ENFORCEMENT
+   Ensures sidebar and TOC always have the
+   cyan/purple eigenscribe aesthetic
+   ============================================ */
+
+/* Force all sidebar backgrounds to eigenscribe theme */
+.ptx-sidebar,
+#ptx-sidebar,
+aside.ptx-sidebar,
+.ptx-sidebar nav,
+.ptx-sidebar .ptx-toc,
+nav#ptx-toc,
+nav.ptx-toc {
+  background-color: rgba(10, 8, 20, 0.95) !important;
+}
+
+/* ALL TOC items must have eigenscribe gradient */
+.ptx-toc li,
+.ptx-toc .toc-item,
+li.toc-item,
+nav .toc-item,
+#ptx-toc li,
+#ptx-sidebar li,
+.ptx-sidebar li {
+  background: linear-gradient(135deg, rgba(20, 181, 255, 0.15), rgba(121, 82, 245, 0.12)) !important;
+  border-color: rgba(20, 181, 255, 0.35) !important;
+}
+
+/* Prevent any grey backgrounds from appearing */
+.ptx-toc li[style*="background"],
+.toc-item[style*="background"],
+li.toc-item[style*="background"] {
+  background: linear-gradient(135deg, rgba(20, 181, 255, 0.15), rgba(121, 82, 245, 0.12)) !important;
+}
+
+/* Ensure no greyish defaults slip through */
+div[class*="toc"],
+section[class*="toc"],
+nav[class*="toc"],
+[class*="sidebar"] {
+  --toclevel-background: rgba(10, 8, 20, 0.95) !important;
+  --toclevel1-background: rgba(10, 8, 20, 0.95) !important;
+  --toclevel2-background: rgba(15, 12, 28, 0.92) !important;
+  --toclevel3-background: rgba(20, 15, 35, 0.90) !important;
 }

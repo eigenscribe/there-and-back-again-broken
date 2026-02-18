@@ -186,8 +186,8 @@ var ptx_lunr_docs = [
   "url": "sec-bridges.html",
   "type": "Section",
   "number": "1.2",
-  "title": "Bridges",
-  "body": " Bridges  "
+  "title": "🌉 Bridges",
+  "body": " 🌉 Bridges  "
 },
 {
   "id": "sec-ogs",
@@ -267,8 +267,8 @@ var ptx_lunr_docs = [
   "url": "sec-fleeting-notes.html",
   "type": "Section",
   "number": "3.1",
-  "title": "Fleeting Notes",
-  "body": " Fleeting Notes  \"The partition funciton is like the of thermodynamic inference; the generator through which all else flows.\"  The concept of plays a central role in statistical mechanics.  "
+  "title": "💨 Fleeting Notes",
+  "body": " 💨 Fleeting Notes  \"The partition funciton is like the of thermodynamic inference; the generator through which all else flows.\"  The concept of plays a central role in statistical mechanics.  "
 },
 {
   "id": "sec-fleeting-notes-2",
