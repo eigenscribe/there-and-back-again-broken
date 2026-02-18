@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-glossary-entries" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Glossary Entries</title>
-  
-  <introduction>
-    <p>
-      A curated list of important terms and their definitions.
-      Use the index to find other references to these terms throughout the book.
-    </p>
-  </introduction>
+<glossary xml:id="sec-glossary-entries" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <!-- Each term should be marked with <idx> tags when first introduced in the main text -->
-  <!-- PreTeXt can auto-generate glossary entries, or you can manually list them here -->
+    <introduction>
+      <p>
+        A curated list of important terms and their definitions.
+        Use the index to locate additional appearances throughout the text.
+      </p>
+    </introduction>
 
-  <p>
-    <term>Add your glossary entries below as you work through the book:</term>
-  </p>
+    <gi xml:id="gls-entropy">
+      <term>Entropy</term>
+      <definition>
+        A quantitative measure of uncertainty or multiplicity in a system.
+        In statistical mechanics, entropy is commonly defined as
+        <m> S = k_B \ln \Omega </m>,
+        where <m>\Omega</m> is the number of accessible microstates
+        and <m>k_B</m> is Boltzmann’s constant.
+      </definition>
+    </gi>
 
-  <dl>
-    <li>
-      <title>Term Name</title>
-      <p>Brief definition and context.</p>
-    </li>
-  </dl>
+    <gi xml:id="gls-hamiltonian">
+      <term>Hamiltonian</term>
+      <definition>
+        The function that represents the total energy of a system expressed
+        in generalized coordinates and conjugate momenta. It generates the
+        equations of motion in Hamiltonian mechanics.
 
-</section>
+        For many classical systems:
+        <me>
+          H(q,p) = \frac{p^2}{2m} + V(q)
+        </me>
+
+        More generally, time evolution is governed by Hamilton’s equations:
+        <me>
+          \dot{q} = \frac{\partial H}{\partial p},
+          \qquad
+          \dot{p} = -\frac{\partial H}{\partial q}.
+        </me>
+      </definition>
+    </gi>
+
+</glossary>

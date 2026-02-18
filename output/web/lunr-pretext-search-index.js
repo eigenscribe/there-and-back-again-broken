@@ -232,7 +232,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Fleeting Notes",
-  "body": " Fleeting Notes  "
+  "body": " Fleeting Notes  \"The partition funciton is like the of thermodynamic inference; the generator through which all else flows.\"  The concept of plays a central role in statistical mechanics.  "
+},
+{
+  "id": "sec-fleeting-notes-2",
+  "level": "2",
+  "url": "sec-fleeting-notes.html#sec-fleeting-notes-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-fleeting-notes-3",
+  "level": "2",
+  "url": "sec-fleeting-notes.html#sec-fleeting-notes-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": ""
 },
 {
   "id": "ch-practice",
@@ -514,22 +532,31 @@ var ptx_lunr_docs = [
   "body": " Zettelkasten Method  "
 },
 {
-  "id": "sec-glossary-entries",
+  "id": "app-glossary",
   "level": "1",
-  "url": "sec-glossary-entries.html",
-  "type": "Section",
-  "number": "A.1",
-  "title": "Glossary Entries",
-  "body": " Glossary Entries   A curated list of important terms and their definitions. Use the index to find other references to these terms throughout the book.      Add your glossary entries below as you work through the book:     Term Name  Brief definition and context.    "
+  "url": "app-glossary.html",
+  "type": "Appendix",
+  "number": "A",
+  "title": "Glossary",
+  "body": " Glossary    A curated list of important terms and their definitions. Use the index to locate additional appearances throughout the text.    Entropy  A quantitative measure of uncertainty or multiplicity in a system. In statistical mechanics, entropy is commonly defined as , where is the number of accessible microstates and is Boltzmann’s constant.    Hamiltonian  The function that represents the total energy of a system expressed in generalized coordinates and conjugate momenta. It generates the equations of motion in Hamiltonian mechanics. For many classical systems: More generally, time evolution is governed by Hamilton’s equations:     "
 },
 {
-  "id": "sec-glossary-entries-3",
+  "id": "gls-entropy-2",
   "level": "2",
-  "url": "sec-glossary-entries.html#sec-glossary-entries-3",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "sec-glossary-entries.html#gls-entropy-2",
+  "type": "Definition",
+  "number": "A.A.1",
   "title": "",
-  "body": "Add your glossary entries below as you work through the book: "
+  "body": "A quantitative measure of uncertainty or multiplicity in a system. In statistical mechanics, entropy is commonly defined as , where is the number of accessible microstates and is Boltzmann’s constant. "
+},
+{
+  "id": "gls-hamiltonian-2",
+  "level": "2",
+  "url": "sec-glossary-entries.html#gls-hamiltonian-2",
+  "type": "Definition",
+  "number": "A.A.2",
+  "title": "",
+  "body": "The function that represents the total energy of a system expressed in generalized coordinates and conjugate momenta. It generates the equations of motion in Hamiltonian mechanics. For many classical systems: More generally, time evolution is governed by Hamilton’s equations:  "
 },
 {
   "id": "sec-bibliography-guide",

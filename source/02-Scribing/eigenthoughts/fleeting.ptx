@@ -2,4 +2,11 @@
 
 <section xml:id="sec-fleeting-notes" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Fleeting Notes</title>
+
+<p>"The partition funciton is like the <term ref="gls-hamiltonian"/> of thermodynamic inference; the generator through which all else flows."</p>
+
+<p>
+  The concept of <term ref="gls-entropy"/> plays a central role in statistical mechanics.
+</p>
+
 </section>
