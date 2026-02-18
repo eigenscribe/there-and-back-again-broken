@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-bibliography-guide" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Additional Bibliography Notes</title>
+  <title>Bibliography Guide</title>
+  
+  <introduction>
+    <p>
+      The following is a curated bibliography of key references used throughout this text.
+      These sources cover foundational concepts in geometric algebra, machine learning, 
+      and mathematical physics.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-key-references">
+    <title>Key References</title>
+    <p>
+      This bibliography is organized by topic and includes:
+      <ul>
+        <li><p><em>Geometric Algebra</em>: Works by David Hestenes on the mathematical framework of geometric algebra and its applications</p></li>
+        <li><p><em>Data-Driven Methods</em>: Contemporary approaches to machine learning and physics-informed neural networks</p></li>
+        <li><p><em>Dynamical Systems</em>: Theory and applications of dynamical systems in scientific computing</p></li>
+      </ul>
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-how-to-cite">
+    <title>How to Cite</title>
+    <p>
+      References throughout this document use the format <c>[@key]</c> where <c>key</c> is 
+      the BibTeX key from the bibliography. For example, <c>[@hestenes1998geometric]</c> 
+      refers to the Hestenes geometric algebra reference.
+    </p>
+    <p>
+      The complete bibliography is automatically generated from <c>references.bib</c> and appears below.
+    </p>
+  </subsection>
+
 </section>
 

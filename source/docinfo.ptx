@@ -6,6 +6,9 @@
     A Zettelkasten-based journal for self-study and networked mathematical thinking.
   </blurb>
 
+  <!-- Bibliography configuration -->
+  <bibliography files="references.bib" />
+
   <!-- Math macros for convenience -->
   <macros>
     \newcommand{\N}{\mathbb{N}}
@@ -22,6 +25,9 @@
     \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
     \usetikzlibrary{decorations.markings}
   </latex-image-preamble>
+
+  <!-- Bibliography configuration -->
+  <bibliography files="references.bib" />
 
   <!-- Cross-reference format -->
   <cross-references text="type-global" />

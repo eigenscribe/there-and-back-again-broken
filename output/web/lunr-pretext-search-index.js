@@ -141,8 +141,8 @@ var ptx_lunr_docs = [
   "url": "sec-fundamentals.html",
   "type": "Section",
   "number": "1.1",
-  "title": "Fundamentals",
-  "body": " Fundamentals    Dot Product   Definition  The dot product between two vectors where is given by:    The dot product is the symmetric component of the geometric product.     See Also   Geometric Product  Wedge Product     References   [@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra      Geometric Product   Definition  A geometric product between where is given by:    The geometric product can be decomposed into symmetric (dot product) and antisymmetric (wedge product) parts.     See Also   Dot Product  Wedge Product     References   [@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra      Wedge Product   Definition  The wedge product between two vectors where is given by:   where .   The wedge product is the antisymmetric component of the geometric product.     See Also   Geometric Product  Dot Product     References   [@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra     "
+  "title": "🔰 Fundamentals",
+  "body": " 🔰 Fundamentals    Dot Product   Definition  The dot product between two vectors where is given by:    The dot product is the symmetric component of the geometric product.     See Also   Geometric Product  Wedge Product     References   [@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra      Geometric Product   Definition  A geometric product between where is given by:    The geometric product can be decomposed into symmetric (dot product) and antisymmetric (wedge product) parts.     See Also   Dot Product  Wedge Product     References   [@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra      Wedge Product   Definition  The wedge product between two vectors where is given by:   where .   The wedge product is the antisymmetric component of the geometric product.     See Also   Geometric Product  Dot Product     References   [@hestenes1998geometric] Chapter 1: Synopsis of Geometric Algebra     "
 },
 {
   "id": "para-dot-definition-4",
@@ -600,8 +600,8 @@ var ptx_lunr_docs = [
   "url": "sec-bibliography-guide.html",
   "type": "Section",
   "number": "B.1",
-  "title": "Additional Bibliography Notes",
-  "body": " Additional Bibliography Notes  "
+  "title": "Bibliography Guide",
+  "body": " Bibliography Guide   The following is a curated bibliography of key references used throughout this text. These sources cover foundational concepts in geometric algebra, machine learning, and mathematical physics.    Key References  This bibliography is organized by topic and includes:  Geometric Algebra : Works by David Hestenes on the mathematical framework of geometric algebra and its applications  Data-Driven Methods : Contemporary approaches to machine learning and physics-informed neural networks  Dynamical Systems : Theory and applications of dynamical systems in scientific computing      How to Cite  References throughout this document use the format [@key] where key is the BibTeX key from the bibliography. For example, [@hestenes1998geometric] refers to the Hestenes geometric algebra reference.  The complete bibliography is automatically generated from references.bib and appears below.   "
 },
 {
   "id": "sec-colophon",

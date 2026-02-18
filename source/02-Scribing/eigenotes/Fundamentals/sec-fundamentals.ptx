@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-fundamentals" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Fundamentals</title>
+  <title>🔰 Fundamentals</title>
   
   <!-- Geometric Algebra -->
-  <xi:include href="sec-dot-product.ptx"/>
-  <xi:include href="sec-geometric-product.ptx"/>
-  <xi:include href="sec-wedge-product.ptx"/>
+  <xi:include href="subsec-dot-product.ptx"/>
+  <xi:include href="subsec-geometric-product.ptx"/>
+  <xi:include href="subsec-wedge-product.ptx"/>
 </section>

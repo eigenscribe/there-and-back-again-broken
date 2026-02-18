@@ -19,6 +19,12 @@
 
   <index>
     <title>Index</title>
+    <introduction>
+      <p>
+        This index provides quick access to key terms and concepts throughout the text.
+        Use <c>&lt;idx&gt;</c> elements within the content to mark terms for automatic indexing.
+      </p>
+    </introduction>
   </index>
 
 </backmatter>
