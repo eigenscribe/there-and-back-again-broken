@@ -310,10 +310,37 @@ var ptx_lunr_docs = [
   "id": "sec-loss-gems-intro",
   "level": "1",
   "url": "sec-loss-gems-intro.html",
-  "type": "Subsection",
+  "type": "Section",
   "number": "6.1",
-  "title": "Curated Provisional Thoughts",
-  "body": " Curated Provisional Thoughts    💎 Loss Gems: Ideas that are still forming but worth keeping. These represent interesting directions and insights even if not yet fully crystallized.          Your gems will go here as you create them.  "
+  "title": "💎Loss Terms",
+  "body": " 💎Loss Terms    💎 Loss Gems: Shamelessly collecting loss terms to perhaps implement in future projects           Loss Gems 💎    Loss Function Mathematical Formulation     "
+},
+{
+  "id": "sec-loss-gems-intro-3",
+  "level": "2",
+  "url": "sec-loss-gems-intro.html#sec-loss-gems-intro-3",
+  "type": "Table",
+  "number": "6.1.1",
+  "title": "Loss Gems 💎",
+  "body": " Loss Gems 💎    Loss Function Mathematical Formulation    "
+},
+{
+  "id": "sec-failure-modes-intro",
+  "level": "1",
+  "url": "sec-failure-modes-intro.html",
+  "type": "Section",
+  "number": "6.2",
+  "title": "❌ Failure Modes",
+  "body": " ❌ Failure Modes   Observed failure modes in Scriber Labs projects.    Spectral Bias     Spectral bias: The tendency of deep neural networks to learn low-frequency (smooth) components of a target function fasater and more accurately than high-frequency components during training.     "
+},
+{
+  "id": "def-spectral-bias",
+  "level": "2",
+  "url": "sec-failure-modes-intro.html#def-spectral-bias",
+  "type": "Definition",
+  "number": "6.2.1",
+  "title": "",
+  "body": "   Spectral bias: The tendency of deep neural networks to learn low-frequency (smooth) components of a target function fasater and more accurately than high-frequency components during training.   "
 },
 {
   "id": "ch-projects",
@@ -365,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-interpretability-note-001.html#sec-interpretability-note-001-7",
   "type": "Note",
-  "number": "8.1.1",
+  "number": "8.1.2",
   "title": "Key Insight.",
   "body": " Key Insight  Highlight the main takeaway if applicable.  "
 },
@@ -428,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-methods-note-001.html#sec-methods-note-001-7",
   "type": "Note",
-  "number": "8.2.2",
+  "number": "8.2.3",
   "title": "Key Insight.",
   "body": " Key Insight  Highlight the main takeaway if applicable.  "
 },
@@ -491,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-unifications-note-001.html#sec-unifications-note-001-7",
   "type": "Note",
-  "number": "8.3.3",
+  "number": "8.3.4",
   "title": "Key Insight.",
   "body": " Key Insight  Highlight the main takeaway if applicable.  "
 },

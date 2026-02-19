@@ -12,7 +12,8 @@
       <p>Research findings and experimental insights.</p>
     </introduction>
     <xi:include href="./Lab Notebook/loss-gems.ptx" />
-  </chapter>
+    <xi:include href="./Lab Notebook/failure-modes.ptx" />
+    </chapter>
 
   <chapter xml:id="ch-projects" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Projects</title>

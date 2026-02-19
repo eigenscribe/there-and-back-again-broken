@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<subsection xml:id="sec-loss-gems-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Curated Provisional Thoughts</title>
+<section xml:id="sec-loss-gems-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>💎Loss Terms</title>
   
   <introduction>
     <p>
-      <alert>💎 Loss Gems:</alert> Ideas that are still forming but worth keeping. These represent
-      interesting directions and insights even if not yet fully crystallized.
+      <alert>💎 Loss Gems:</alert> Shamelessly collecting loss terms to perhaps implement in future projects
     </p>
   </introduction>
 
@@ -18,6 +17,13 @@
   <!--   <p>Content here...</p> -->
   <!-- </subsection> -->
 
-  <p>Your gems will go here as you create them.</p>
+  <table>
+    <title>Loss Gems 💎</title>
+    <tabular>
+        <row>
+            <cell>Loss Function</cell><cell>Mathematical Formulation</cell>
+        </row>
+    </tabular>
+  </table>
   
-</subsection>
+</section>

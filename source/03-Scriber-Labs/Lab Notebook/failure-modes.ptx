@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-failure-modes-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>❌ Failure Modes</title>
+  
+  <introduction>
+    <p>
+      Observed failure modes in Scriber Labs projects.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-spectral-bias">
+    <title>Spectral Bias</title>
+    <definition xml:id="def-spectral-bias">
+        <statement>
+            <p>
+                <term>Spectral bias:</term> The tendency of deep neural networks to learn low-frequency (smooth) components of a target function fasater and more accurately than high-frequency components during training.
+            </p>
+        </statement>
+    </definition>
+    
+  </subsection>
+  
+</section>
