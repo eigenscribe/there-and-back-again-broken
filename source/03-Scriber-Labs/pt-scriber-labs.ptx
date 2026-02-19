@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <part xml:id="pt-scriber-labs" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Scriber Labs</title>
+  <title>⚗️ Scriber Labs</title>
   <introduction>
     <p>Project writeups, explorations, and research questions.</p>
   </introduction>
